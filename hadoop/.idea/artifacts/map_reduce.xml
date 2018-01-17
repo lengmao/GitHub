@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="map-reduce">
+    <output-path>$PROJECT_DIR$/out/artifacts/map_reduce</output-path>
+    <root id="archive" name="map-reduce.jar">
+      <element id="module-output" name="hadoop" />
+    </root>
+  </artifact>
+</component>
