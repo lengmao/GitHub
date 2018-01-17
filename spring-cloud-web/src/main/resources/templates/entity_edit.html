@@ -1,0 +1,32 @@
+<div style="margin: 15px;">
+    <input id="instanceId" type="hidden" th:value="${instanceId}"/>
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label required">entity_id</label>
+            <div class="layui-input-block">
+                <input type="text" id="entity_id" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input"></input>
+            </div>
+        </div>
+        <div class="layui-form-item" id="layui-form-item_div">
+            <label class="layui-form-label required">parent_id</label>
+            <div class="layui-input-block">
+                <input type="text" id="parent_id" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input"></input>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label required">entity_code</label>
+            <div class="layui-input-block">
+                <input type="text" id="entity_code" lay-verify="required" autocomplete="off" placeholder="请输入" class="layui-input"></input>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label required">entity_name</label>
+            <div class="layui-input-block">
+                <input type="text" id="entity_name" lay-verify="required" autocomplete="off" placeholder="请输入" class="layui-input"></input>
+            </div>
+        </div>
+
+        <button id="btn_entity" lay-filter="entity_edit" style="display: none;"></button>
+    </form>
+</div>
+<script type="text/javascript" src="ag/entity.js"></script>

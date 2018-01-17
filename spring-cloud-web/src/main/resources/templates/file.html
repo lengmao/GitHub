@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件操作示例</title>
+</head>
+<body>
+    <h2>文件上传示例</h2>
+    <form method="POST" enctype="multipart/form-data" action="file/uploadFile">
+        <p>
+            文件：<input type="file" name="file" >
+        </p>
+        <p>
+            <input type="submit" value="上传" >
+        </p>
+    </form>
+
+    <form method="POST" enctype="multipart/form-data" action="file/uploadFile01">
+        <p>
+            文件：<input type="file" name="file" >
+        </p>
+        <p>
+            文件：<input type="file" name="file" >
+        </p>
+        <p>
+            <input type="submit" value="上传" >
+        </p>
+    </form>
+</body>
+</html>

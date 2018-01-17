@@ -1,0 +1,25 @@
+<!--已暂停使用号码，身份账号和邮箱验证功能，调试完毕后请开启-->
+<div style="margin: 15px;">
+    <form class="layui-form layui-form-pane" action="" id="index_form">
+        <div class="layui-form-item">
+            <label class="layui-form-label required">表名</label>
+            <div class="layui-input-block">
+                <input type="text" id="table" name="table" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input"></input>
+            </div>
+        </div>
+
+        <div class="layui-form-item" id="add_col">
+            <label class="layui-form-label required">列名</label>
+            <div class="layui-input-inline">
+                <input type="text" id="columnName" name="columnName" lay-verify="required" autocomplete="off" placeholder="请输入" class="layui-input"></input>
+            </div>
+            <label class="layui-form-label required">类型</label>
+            <div class="layui-input-inline">
+                <input type="text" id="columnType" name="columnType" lay-verify="required" autocomplete="off" placeholder="请输入" class="layui-input"></input>
+            </div>
+            <button class="layui-btn layui-btn-normal layui-btn-small"><i class="layui-icon" id="btn_col">&#xe654;</i></button>
+        </div>
+        <button lay-filter="edit" style="display: none;"></button>
+    </form>
+</div>
+<script type="text/javascript" src="ag/index.js"></script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Title</title>
+    <script type="text/javascript" src="../plugins/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form_test" name="form_test" enctype="multipart/form-data">
+        <input type="text" name="username"></input>
+        <input type="text" name="password"></input>
+        <input type="button" onclick="test();" value="提交" ></input>
+    </form>
+
+    <script>
+        
+        function test() {
+            var form=$("#form_test").serialize();
+            console.log(form);
+        }
+    </script>
+</body>
+</html>

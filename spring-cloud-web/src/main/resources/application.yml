@@ -1,0 +1,43 @@
+spring:
+     application:
+         name: bzh-bigdata
+     jackson:
+         date-format: yyyy-MM-dd HH:mm:ss
+         time-zone: GMT+8
+         default-property-inclusion: NON_NULL
+     datasource:
+         name: bzh-bigdata
+         url: jdbc:mysql://127.0.0.1:3306/maintenance?useUnicode=true&characterEncoding=UTF8
+         username: root
+         password: admin
+         # 使用druid数据源
+         type: com.alibaba.druid.pool.DruidDataSource
+         driver-class-name: com.mysql.jdbc.Driver
+         filters: stat
+         maxActive: 20
+         initialSize: 1
+         maxWait: 60000
+         minIdle: 1
+         timeBetweenEvictionRunsMillis: 60000
+         minEvictableIdleTimeMillis: 300000
+         validationQuery: select 'x'
+         testWhileIdle: true
+         testOnBorrow: false
+         testOnReturn: false
+         poolPreparedStatements: true
+         maxOpenPreparedStatements: 20
+     thymeleaf:
+       cache: false
+       prefix: classpath:templates/
+       suffix: .html
+       encoding: UTF-8
+       content-type: text/html
+       mode: LEGACYHTML5
+
+server:
+  port: 8085
+
+mybatis:
+     config-location: classpath:config/mybatis-config.xml
+     mapper-locations: classpath:mapper/*.xml
+     type-aliases-package: com.frame.entity
