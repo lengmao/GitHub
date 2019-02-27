@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.demo.busi.mapper.MyTestMapper">
+    <resultMap id="baseResultMap" type="com.springboot.demo.busi.entity.MyTestEntity">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="phone" property="phone" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="columnList">id,name,address,phone</sql>
+    <select id="getList" resultMap="baseResultMap" parameterType="java.util.HashMap">
+        SELECT
+        <include refid="columnList" />
+        from test_data;
+    </select>
+</mapper>

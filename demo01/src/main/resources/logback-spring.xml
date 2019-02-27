@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<configuration> 有三个属性值-->
+<!--1、scan 当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true -->
+<!--2、scanPeriod:设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟-->
+<!--3、debug:当此属性设置为true时，将打印出logback内部日志信息，实时查看logback运行状态。默认值为false-->
+<configuration>
+    <!--输出到控制台-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- ThresholdFilter为系统定义的拦截器，例如我们用ThresholdFilter来过滤掉ERROR级别以下的日志不输出到文件中。如果不用记得注释掉，不然你控制台会发现没日志-->
+        <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter" >-->
+            <!--<level>ERROE</level>-->
+        <!--</filter>-->
+
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <!--%d{HH: mm:ss.SSS}——日志输出时间
+                %thread——输出日志的进程名字，这在Web应用以及异步任务处理中很有用
+                %-5level——日志级别，并且使用5个字符靠左对齐
+                %logger{36}——日志输出者的名字
+                %msg——日志消息
+                %n——平台的换行符-->
+        </encoder>
+    </appender>
+
+    <!--输出到文件-->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logging.path}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logback.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <!--其中重要的是rollingPolicy的定义，上例中<fileNamePattern>logback.%d{yyyy-MM-dd}.log</fileNamePattern>
+        定义了日志的切分方式——把每一天的日志归档到一个文件中，<maxHistory>30</maxHistory>表示只保留最近30天的日志，
+        以防止日志填满整个磁盘空间。同理，可以使用%d{yyyy-MM-dd_HH-mm}来定义精确到分的日志切分方式。
+        <totalSizeCap>1GB</totalSizeCap>用来指定日志文件的上限大小，例如设置为1GB的话，那么到了这个值，就会删除旧的日志-->
+    </appender>
+    <logger name="com.springboot.demo" level="error">
+        <appender-ref ref="console"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <jmxConfigurator/>
+</configuration>
