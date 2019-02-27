@@ -1,0 +1,8 @@
+14:54:58.998 default [main] INFO  com.springboot.demo.DemoApplication - Starting DemoApplication on DESKTOP-IFH64UH with PID 2564 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+14:54:59.010 default [main] DEBUG com.springboot.demo.DemoApplication - Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+14:54:59.038 default [main] INFO  com.springboot.demo.DemoApplication - No active profile set, falling back to default profiles: default
+14:55:15.377 default [main] INFO  com.springboot.demo.DemoApplication - Started DemoApplication in 22.742 seconds (JVM running for 55.575)
+14:55:27.125 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM SYSTEM_USER WHERE name =? AND password=?; 
+14:55:27.234 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+14:55:41.761 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM SYSTEM_USER WHERE name =? AND password=?; 
+14:55:41.763 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)

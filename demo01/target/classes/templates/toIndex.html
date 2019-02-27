@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页面</title>
+</head>
+<body>
+<h1>页面展示demo</h1>
+<button type="button" id="loginOut" tabindex="4" class="btn btn-primary">退出</button>
+</body>
+<script src="/assets/jquery.min.js"></script>
+<script>
+    $("#loginOut").click(loginOut);
+    function loginOut() {
+
+      window.location.href="/logout"
+    }
+</script>
+</html>
