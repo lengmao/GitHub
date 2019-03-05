@@ -1,4 +1,4 @@
-package com.springboot.demo.web;
+package com.springboot.demo.sys.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +20,7 @@ public class WebController {
 
     @RequestMapping("/index")
     public String index() {
-        return "/toIndex";
+        return "/index";
     }
 
     @RequestMapping("/403")

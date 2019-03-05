@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="登录界面" />
-<title>登录界面</title>
-
-<link rel="stylesheet" href="/assets/css/jq22.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="登录界面"/>
+    <title>登录界面</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/jq22.css"/>
 </head>
 <body>
 <!-- begin -->
@@ -26,17 +26,20 @@
                     <div class="control-group">
                         <div class="controls">
                             <label for="userName" class="control-label fa fa-envelope"></label>
-                            <input id="userName" type="text" name="email" placeholder="Email" tabindex="1" autofocus="autofocus" class="form-control input-medium" />
+                            <input id="userName" type="text" name="email" placeholder="Email" tabindex="1"
+                                   autofocus="autofocus" class="form-control input-medium"/>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="controls">
                             <label for="password" class="control-label fa fa-asterisk"></label>
-                            <input id="password" type="password" name="password" placeholder="Password" tabindex="2" class="form-control input-medium" />
+                            <input id="password" type="password" name="password" placeholder="Password" tabindex="2"
+                                   class="form-control input-medium"/>
                         </div>
                     </div>
                 </div>
-                <div class="form-actions"><a href="#" tabindex="5" class="btn pull-left btn-link text-muted">Forgot password?</a><a href="#" tabindex="6" class="btn btn-link text-muted">Sign Up</a>
+                <div class="form-actions"><a href="#" tabindex="5" class="btn pull-left btn-link text-muted">Forgot
+                    password?</a><a href="#" tabindex="6" class="btn btn-link text-muted">Sign Up</a>
                     <button type="button" id="doLogin" tabindex="4" class="btn btn-primary">Login</button>
                 </div>
             </form>
@@ -45,34 +48,35 @@
 </div>
 <!-- end-->
 <script src="/assets/jquery.min.js"></script>
-    <script>
-        $('#login #password').focus(function() {
-            $('#owl-login').addClass('password');
-        }).blur(function() {
-            $('#owl-login').removeClass('password');
-        });
+<script>
+    $('#login #password').focus(function () {
+        $('#owl-login').addClass('password');
+    }).blur(function () {
+        $('#owl-login').removeClass('password');
+    });
 
-        //简单登录操作
-        $("#doLogin").click(login);
-        function login() {
-            $.ajax({
-                type : "POST",
-                url : "/submitLogin",
-                data : {
-                    "name" : $("#userName").val(),
-                    "password" : $("#password").val(),
-                    "rememberMe":true
-                },
-                dataType : "json",
-                success : function(res) {
-                    if (res.status == 200) {
-                        window.location.href ="/index";
-                    } else {
-                        alert("账号密码不能为空！");
-                    }
+    //简单登录操作
+    $("#doLogin").click(login);
+
+    function login() {
+        $.ajax({
+            type: "POST",
+            url: "/submitLogin",
+            data: {
+                "name": $("#userName").val(),
+                "password": $("#password").val(),
+                "rememberMe": true
+            },
+            dataType: "json",
+            success: function (res) {
+                if (res.status == 200) {
+                    window.location.href = "/index";
+                } else {
+                    alert("账号密码不能为空！");
                 }
-            });
-        }
-    </script>
+            }
+        });
+    }
+</script>
 </body>
 </html>

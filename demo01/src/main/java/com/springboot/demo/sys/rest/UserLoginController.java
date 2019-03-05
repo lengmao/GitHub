@@ -1,18 +1,13 @@
 package com.springboot.demo.sys.rest;
 
-import com.springboot.demo.sys.dto.User;
-import com.springboot.demo.sys.entity.SysUser;
-import com.springboot.demo.sys.service.UserService;
+import com.springboot.demo.sys.service.SysUserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -26,22 +21,7 @@ import java.util.Map;
 public class UserLoginController {
 
     @Autowired
-    UserService userService;
-
-    @RequestMapping(value = "/toLogin",method = RequestMethod.POST)
-    public Map<String,Object> login(HttpServletRequest request, HttpServletResponse response) {
-        Map<String,Object> map= new HashMap<>();
-        String userName=request.getParameter("userName");
-        String password=request.getParameter("password");
-        if(!userName.trim().equals("")&&!password.trim().equals("")){
-            User user=new User(userName,password);
-            request.getSession().setAttribute("user",user);
-            map.put("result","1");
-        }else {
-            map.put("result","0");
-        }
-        return map;
-    }
+    SysUserService sysUserService;
 
     @RequestMapping(value = "/submitLogin",method = RequestMethod.POST)
     public Map<String,Object> submitLogin(HttpServletRequest request

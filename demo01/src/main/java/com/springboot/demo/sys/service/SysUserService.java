@@ -1,5 +1,6 @@
 package com.springboot.demo.sys.service;
 
+import com.springboot.demo.commom.BusiException;
 import com.springboot.demo.sys.entity.SysUser;
 import com.springboot.demo.sys.mapper.SysUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,18 +14,17 @@ import java.util.Map;
  * @date 2019/2/26 14:31
  */
 @Service
-public class UserService {
+public class SysUserService {
 
     @Autowired
     SysUserMapper sysUserMapper;
 
     public SysUser getUserByMap(Map<String, String> map) {
-
         SysUser sysUser=new SysUser();
         try{
             sysUser=sysUserMapper.getUserByMap(map);
-        }catch (Exception e){
-
+        }catch (BusiException e){
+            throw new BusiException(e.getMessage());
         }
         return sysUser;
     }

@@ -15,6 +15,6 @@
     <select id="getUserByMap" resultType="com.springboot.demo.sys.entity.SysUser" parameterType="java.util.HashMap">
         SELECT
         <include refid="columnList" />
-        FROM SYSTEM_USER WHERE name =#{name} AND password=#{password};
+        FROM sys_user WHERE name =#{name} AND password=#{password};
     </select>
 </mapper>
