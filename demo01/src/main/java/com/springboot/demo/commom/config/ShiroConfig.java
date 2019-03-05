@@ -1,4 +1,4 @@
-package com.springboot.demo.config;
+package com.springboot.demo.commom.config;
 
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -36,7 +36,6 @@ public class ShiroConfig {
          */
         filter.put("/assets/**","anon");
         filter.put("/submitLogin","anon");
-        filter.put("/toLogin","anon");
 
         //配置退出 过滤器,其中的具体的退出代码Shiro已经替我们实现了
         filter.put("/logout", "logout");

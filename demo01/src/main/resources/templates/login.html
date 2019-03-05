@@ -64,15 +64,14 @@
             url: "/submitLogin",
             data: {
                 "name": $("#userName").val(),
-                "password": $("#password").val(),
-                "rememberMe": true
+                "password": $("#password").val()
             },
             dataType: "json",
             success: function (res) {
                 if (res.status == 200) {
                     window.location.href = "/index";
                 } else {
-                    alert("账号密码不能为空！");
+                    alert(res.msg);
                 }
             }
         });

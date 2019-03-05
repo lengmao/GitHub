@@ -1,4 +1,4 @@
-package com.springboot.demo.config;
+package com.springboot.demo.commom.config;
 
 import com.springboot.demo.sys.entity.SysUser;
 import com.springboot.demo.sys.service.SysUserService;
@@ -46,7 +46,8 @@ public class MyShiroRealm extends AuthorizingRealm {
 
             if (null == sysUser) {
                 throw new AccountException("账号或密码不正确!!");
-            } else if ("0".equals(sysUser.getStatus())) {
+            }
+            if ("0".equals(sysUser.getStatus())) {
                 throw new DisabledAccountException("此账号已经设置为禁止登录!!");
             } else {
                 //登录成功

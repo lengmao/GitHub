@@ -1,4 +1,4 @@
-package com.springboot.demo.commom;
+package com.springboot.demo.commom.exception;
 
 /**
  * @author scaf_xs

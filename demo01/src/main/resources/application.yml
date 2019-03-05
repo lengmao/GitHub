@@ -1,7 +1,7 @@
 logging:
   config: classpath:logback-spring.xml
   level:
-      com.springboot.demo: ERROR
+      com.springboot.demo: DEBUG
   path: logs
 
 spring:

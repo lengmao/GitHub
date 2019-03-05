@@ -1,6 +1,6 @@
 package com.springboot.demo.sys.rest;
 
-import com.springboot.demo.commom.BusiException;
+import com.springboot.demo.commom.exception.BusiException;
 import com.springboot.demo.sys.entity.SysMenu;
 import com.springboot.demo.sys.service.SysMenuService;
 import com.springboot.demo.util.TreeListUtil;

@@ -1,0 +1,108 @@
+11:42:55.549 default [main] INFO  com.springboot.demo.DemoApplication - Starting DemoApplication on DESKTOP-IFH64UH with PID 2724 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+11:42:55.557 default [main] DEBUG com.springboot.demo.DemoApplication - Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+11:42:55.561 default [main] INFO  com.springboot.demo.DemoApplication - No active profile set, falling back to default profiles: default
+11:43:02.012 default [main] INFO  com.springboot.demo.DemoApplication - Started DemoApplication in 8.137 seconds (JVM running for 17.581)
+11:44:32.609 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:44:32.742 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:44:32.839 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:45:10.821 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:45:10.823 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:45:10.829 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:46:37.516 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:46:37.519 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:46:37.522 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:46:41.413 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:46:41.414 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:46:41.418 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:46:54.828 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:46:54.830 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:46:54.835 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:46:55.580 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+11:46:55.581 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+11:46:55.655 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+11:47:30.044 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:47:30.046 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:47:30.049 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:47:30.533 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+11:47:30.534 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+11:47:30.540 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+11:47:43.467 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+11:47:43.468 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+11:47:43.474 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+11:47:45.168 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+11:47:45.169 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+11:47:45.174 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+11:47:50.775 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:47:50.777 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:47:50.780 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:47:59.346 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:47:59.347 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:47:59.350 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:51:12.287 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:51:12.288 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:51:12.292 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:51:34.318 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:51:34.320 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 55555(String)
+11:51:34.322 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 0
+11:51:45.106 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:51:45.108 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:51:45.113 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:59:10.427 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:59:10.429 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:59:10.432 default [http-nio-8888-exec-1] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:59:22.423 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+11:59:22.424 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+11:59:22.427 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+11:59:22.972 default [http-nio-8888-exec-8] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+11:59:22.973 default [http-nio-8888-exec-8] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+11:59:22.978 default [http-nio-8888-exec-8] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+13:46:12.246 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+13:46:12.253 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+13:46:12.263 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+13:46:13.113 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+13:46:13.115 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+13:46:13.123 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+13:46:46.140 default [http-nio-8888-exec-10] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+13:46:46.141 default [http-nio-8888-exec-10] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+13:46:46.146 default [http-nio-8888-exec-10] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+13:48:46.439 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+13:48:46.440 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+13:48:46.445 default [http-nio-8888-exec-9] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+14:07:48.922 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+14:07:48.923 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+14:07:48.929 default [http-nio-8888-exec-2] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+14:07:52.855 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+14:07:52.856 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+14:07:52.858 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+14:07:53.276 default [http-nio-8888-exec-6] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+14:07:53.278 default [http-nio-8888-exec-6] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+14:07:53.283 default [http-nio-8888-exec-6] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+14:08:08.483 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+14:08:08.485 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+14:08:08.487 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+14:08:08.841 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+14:08:08.842 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+14:08:08.848 default [http-nio-8888-exec-7] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+15:27:55.153 default [main] INFO  com.springboot.demo.DemoApplication - Starting DemoApplication on DESKTOP-IFH64UH with PID 1396 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+15:27:55.162 default [main] DEBUG com.springboot.demo.DemoApplication - Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+15:27:55.167 default [main] INFO  com.springboot.demo.DemoApplication - No active profile set, falling back to default profiles: default
+15:28:01.989 default [main] INFO  com.springboot.demo.DemoApplication - Started DemoApplication in 8.24 seconds (JVM running for 18.261)
+15:30:15.530 default [http-nio-8888-exec-10] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+15:30:15.652 default [http-nio-8888-exec-10] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+15:30:15.734 default [http-nio-8888-exec-10] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+15:31:57.962 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+15:31:57.963 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+15:31:57.984 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+15:38:11.043 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+15:38:11.045 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+15:38:11.055 default [http-nio-8888-exec-4] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5
+15:38:29.939 default [main] INFO  com.springboot.demo.DemoApplication - Starting DemoApplication on DESKTOP-IFH64UH with PID 12108 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+15:38:29.949 default [main] DEBUG com.springboot.demo.DemoApplication - Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+15:38:29.954 default [main] INFO  com.springboot.demo.DemoApplication - No active profile set, falling back to default profiles: default
+15:38:37.001 default [main] INFO  com.springboot.demo.DemoApplication - Started DemoApplication in 8.482 seconds (JVM running for 18.766)
+15:38:53.431 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+15:38:53.540 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - ==> Parameters: admin(String), 111111(String)
+15:38:53.661 default [http-nio-8888-exec-5] DEBUG c.s.d.s.m.SysUserMapper.getUserByMap - <==      Total: 1
+15:38:54.466 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.S.getAllSysMenus - ==>  Preparing: SELECT * FROM sys_menu; 
+15:38:54.468 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.S.getAllSysMenus - ==> Parameters: 
+15:38:54.490 default [http-nio-8888-exec-3] DEBUG c.s.d.s.m.S.getAllSysMenus - <==      Total: 5

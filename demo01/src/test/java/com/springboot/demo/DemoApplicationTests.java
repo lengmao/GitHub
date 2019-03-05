@@ -1,7 +1,7 @@
 package com.springboot.demo;
 
 import com.alibaba.fastjson.JSON;
-import com.springboot.demo.config.DataSourceConfig;
+import com.springboot.demo.commom.config.DataSourceConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

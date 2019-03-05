@@ -1,6 +1,6 @@
 package com.springboot.demo.sys.service;
 
-import com.springboot.demo.commom.BusiException;
+import com.springboot.demo.commom.exception.BusiException;
 import com.springboot.demo.sys.entity.SysMenu;
 import com.springboot.demo.sys.mapper.SysMenuMapper;
 import org.springframework.beans.factory.annotation.Autowired;
