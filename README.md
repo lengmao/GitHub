@@ -11,7 +11,7 @@
 
 # demo01
 #### 说明：练习小项目
-1、spring boot+mybatis作为此项目的总体架构
-2、登录认证采用spring boot+shiro，快捷、方便、简单
-3、数据库连接采用alibaba连接池，高效
+###### 1、spring boot+mybatis作为此项目的总体架构
+###### 2、登录认证采用spring boot+shiro，快捷、方便、简单
+###### 3、数据库连接采用alibaba连接池，高效
 
