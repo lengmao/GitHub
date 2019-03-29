@@ -45,7 +45,7 @@ demo01
 2、准备
 
   （1）基本需要：mysql数据库、jdk1.8、maven  
-  （2）下载路径：https://github.com/lengmao/GitHub，  
+  （2）下载路径：https://github.com/lengmao/GitHub    
   （3）下载完成打开mysql数据库执行mydatabase.sql.  
   （4）将工程导入开发工具，运行demoApplication.java  
   
