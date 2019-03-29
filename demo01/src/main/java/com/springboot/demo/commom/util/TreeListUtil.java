@@ -1,17 +1,9 @@
-package com.springboot.demo.util;
+package com.springboot.demo.commom.util;
 
 import com.springboot.demo.sys.entity.SysMenu;
 import org.apache.commons.lang.StringUtils;
-
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * @author scaf_xs
- * @ClassName: TreeListUtil
- * @Description: TODO(这里用一句话描述这个类的作用)
- * @date 2019/2/28 16:03
- */
 
 public class TreeListUtil {
 
@@ -54,6 +46,7 @@ public class TreeListUtil {
         }
 
         for (SysMenu sysMenu : childList) {
+
             //如果没有url,说明子菜单下边还有子菜单
             if ("" == sysMenu.getUrl() || "".equals(sysMenu.getUrl())) {
                 sysMenu.setChilds(getChild(sysMenu.getCode(), rootList));
@@ -64,6 +57,7 @@ public class TreeListUtil {
         if (childList.size() == 0) {
             return null;
         }
+
         return childList;
     }
 }

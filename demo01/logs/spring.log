@@ -1,50 +1,291 @@
-2019-03-05 10:04:48.042  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$e47a476] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:48.077  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c81c441] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:48.385  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:48.433  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$cf561571] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:48.444  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.config.DataSourceConfig$$EnhancerBySpringCGLIB$$ee6636d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:48.523  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:48.567  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:48.578  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:49.111  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:49.132  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:49.138  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:49.150  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:49.157  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:49.159  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [com.springboot.demo.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:49.198  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 10:04:50.381  INFO 11116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-03-05 10:04:50.434  INFO 11116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-03-05 10:04:50.435  INFO 11116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-03-05 10:04:50.448  INFO 11116 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
-2019-03-05 10:04:50.449  INFO 11116 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2019-03-05 10:04:50.449  INFO 11116 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2019-03-05 10:04:50.450  INFO 11116 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2019-03-05 10:04:51.532  INFO 11116 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2019-03-05 10:04:51.771  INFO 11116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-03-05 10:04:51.772  INFO 11116 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6195 ms
-2019-03-05 10:04:52.503  INFO 11116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-03-05 10:04:52.851  INFO 11116 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-03-05 10:04:53.225  INFO 11116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-03-05 10:04:56.574  INFO 11116 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-03-05 10:04:56.575  INFO 11116 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-03-05 10:04:56.608  INFO 11116 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
-2019-03-05 11:35:28.691  INFO 11116 --- [http-nio-8888-exec-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-03-05 11:39:16.914  WARN 11116 --- [http-nio-8888-exec-10] o.a.shiro.mgt.DefaultSecurityManager     : Delegate RememberMeManager instance of type [org.apache.shiro.web.mgt.CookieRememberMeManager] threw an exception during onSuccessfulLogin.  RememberMe services will not be performed for account [com.springboot.demo.sys.entity.SysUser@74151fc9].
+2019-03-29 15:50:28.957  INFO 12876 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication on DESKTOP-IFH64UH with PID 12876 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+2019-03-29 15:50:29.011 DEBUG 12876 --- [main] com.springboot.demo.DemoApplication      : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-03-29 15:50:29.018  INFO 12876 --- [main] com.springboot.demo.DemoApplication      : No active profile set, falling back to default profiles: default
+2019-03-29 15:50:40.831  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.commom.config.ShiroConfig$$EnhancerBySpringCGLIB$$d5e2df4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:41.052  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0cff688] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:44.023  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:44.080  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$3a447b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:44.100  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.commom.config.DataSourceConfig$$EnhancerBySpringCGLIB$$376febc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:44.509  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:44.641  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:44.672  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:46.797  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:47.440  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:47.534  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:47.666  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:47.674  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:47.676  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myshiroRealm' of type [com.springboot.demo.commom.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:47.901  INFO 12876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 15:50:52.988  INFO 12876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-03-29 15:50:53.142  INFO 12876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-29 15:50:53.143  INFO 12876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-03-29 15:50:53.183  INFO 12876 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
+2019-03-29 15:50:53.184  INFO 12876 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-03-29 15:50:53.185  INFO 12876 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-03-29 15:50:53.185  INFO 12876 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-03-29 15:50:54.488  INFO 12876 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-03-29 15:50:55.929  INFO 12876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-29 15:50:55.930  INFO 12876 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 26136 ms
+2019-03-29 15:50:57.710  INFO 12876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-29 15:50:58.722  INFO 12876 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-29 15:50:59.587  INFO 12876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-03-29 15:50:59.614  INFO 12876 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 39.342 seconds (JVM running for 80.662)
+2019-03-29 15:51:37.250  INFO 12876 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-29 15:51:37.252  INFO 12876 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-29 15:51:37.293  INFO 12876 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 41 ms
+2019-03-29 15:53:11.174  INFO 12876 --- [http-nio-8888-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-29 15:53:11.209 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 15:53:11.344 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 15:53:11.485 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 15:53:13.016 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 15:53:13.019 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 15:53:13.191 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 15:53:22.753 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==>  Preparing: select * from sys_menu; 
+2019-03-29 15:53:22.755 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==> Parameters: 
+2019-03-29 15:53:22.765 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : <==      Total: 4
+2019-03-29 15:53:26.312 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:53:26.313 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:53:26.322 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:53:26.323 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:53:26.324 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:53:26.328 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:53:29.086 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==>  Preparing: select * from sys_menu; 
+2019-03-29 15:53:29.087 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==> Parameters: 
+2019-03-29 15:53:29.092 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : <==      Total: 4
+2019-03-29 15:53:29.094 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRoleMenu      : ==>  Preparing: select m.id,m.`name`,m.`code`,m.parentCode,m.url,m.icon,m.description from sys_menu m,sys_role_menu rm,sys_role r where m.code=rm.menuId and rm.roleId=r.id and r.id=?; 
+2019-03-29 15:53:29.095 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRoleMenu      : ==> Parameters: 170a7f2452b146fc89f0040c3a6423ef(String)
+2019-03-29 15:53:29.098 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRoleMenu      : <==      Total: 3
+2019-03-29 15:53:33.752 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==>  Preparing: select * from sys_menu; 
+2019-03-29 15:53:33.753 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==> Parameters: 
+2019-03-29 15:53:33.757 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : <==      Total: 4
+2019-03-29 15:53:33.758 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRoleMenu      : ==>  Preparing: select m.id,m.`name`,m.`code`,m.parentCode,m.url,m.icon,m.description from sys_menu m,sys_role_menu rm,sys_role r where m.code=rm.menuId and rm.roleId=r.id and r.id=?; 
+2019-03-29 15:53:33.759 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRoleMenu      : ==> Parameters: a97f07516e1f42d1aadd8af25245278e(String)
+2019-03-29 15:53:33.762 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRoleMenu      : <==      Total: 4
+2019-03-29 15:53:37.373 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 15:53:37.374 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:53:37.378 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 15:53:37.379 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 15:53:37.379 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 15:53:37.380 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 15:53:39.260 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:53:39.261 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:53:39.262 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:53:39.265 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:53:39.266 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:53:39.266 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 15:53:39.267 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:53:39.269 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:53:39.294 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 15:53:43.380 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:53:43.382 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:53:43.382 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:53:43.384 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 15:53:43.385 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:53:43.386 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:53:43.386 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 15:53:43.387 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:53:43.388 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:55:04.700 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 15:55:04.701 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 15:55:04.721 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 15:55:07.205 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 15:55:07.206 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:55:07.210 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 15:55:07.212 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 15:55:07.212 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 15:55:07.214 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 15:55:09.064 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:55:09.064 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:55:09.065 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:55:09.065 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 15:55:09.067 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 15:55:09.068 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:55:09.069 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:55:09.069 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:55:09.071 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:55:15.011 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:55:15.011 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:55:15.012 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:55:15.012 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 15:55:15.014 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:55:15.014 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 15:55:15.015 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:55:15.016 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:55:15.018 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:55:19.755 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:55:19.755 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:55:19.756 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 15:55:19.756 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:55:19.759 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 15:55:19.759 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:55:19.760 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:55:19.761 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:55:19.763 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:55:27.575 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:55:27.576 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:55:27.577 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:55:27.578 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:55:27.578 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:55:27.589 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:55:29.299 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==>  Preparing: select * from sys_menu; 
+2019-03-29 15:55:29.300 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==> Parameters: 
+2019-03-29 15:55:29.304 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : <==      Total: 4
+2019-03-29 15:55:29.305 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRoleMenu      : ==>  Preparing: select m.id,m.`name`,m.`code`,m.parentCode,m.url,m.icon,m.description from sys_menu m,sys_role_menu rm,sys_role r where m.code=rm.menuId and rm.roleId=r.id and r.id=?; 
+2019-03-29 15:55:29.306 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRoleMenu      : ==> Parameters: 170a7f2452b146fc89f0040c3a6423ef(String)
+2019-03-29 15:55:29.310 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRoleMenu      : <==      Total: 3
+2019-03-29 15:55:52.650 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 15:55:52.651 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: demo(String), fe01ce2a7fbac8fafaed7c982a04e229(String)
+2019-03-29 15:55:52.654 DEBUG 12876 --- [http-nio-8888-exec-5] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 15:55:53.381 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 15:55:53.383 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 15:55:53.387 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 3
+2019-03-29 15:55:56.359 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:55:56.359 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:55:56.361 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:55:56.362 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:55:56.363 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:55:56.364 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:55:57.903 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==>  Preparing: select * from sys_menu; 
+2019-03-29 15:55:57.904 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : ==> Parameters: 
+2019-03-29 15:55:57.907 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.mapper.SysMenuMapper.getAllMenu  : <==      Total: 4
+2019-03-29 15:56:03.835 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 15:56:03.837 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 15:56:03.839 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 15:56:04.359 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 15:56:04.391 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 15:56:04.395 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 15:56:06.952 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 15:56:06.953 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:56:06.956 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 15:56:06.957 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 15:56:06.958 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 15:56:06.960 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 15:56:08.249 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:56:08.250 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:56:08.251 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:56:08.252 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 15:56:08.253 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:56:08.254 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 15:56:08.254 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:56:08.255 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:56:08.257 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:56:50.629 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 15:56:50.630 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 15:56:50.634 DEBUG 12876 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 15:56:53.071 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 15:56:53.073 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:56:53.076 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 15:56:53.078 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 15:56:53.079 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 15:56:53.080 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 15:56:55.015 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:56:55.016 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 15:56:55.019 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 15:56:55.111 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:56:55.111 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:56:55.113 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:56:55.114 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:56:55.114 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:56:55.116 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 15:57:04.672 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 15:57:04.674 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 15:57:04.674 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 15:57:04.675 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 15:57:04.678 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 15:57:04.678 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 15:57:04.679 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 15:57:04.679 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 15:57:04.680 DEBUG 12876 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:19:54.244 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:19:54.247 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 16:19:54.251 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:19:55.202 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:19:55.203 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:19:55.208 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:19:57.223 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:19:57.224 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:19:57.227 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:19:57.228 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:19:57.228 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:19:57.231 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:19:58.877 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:19:58.879 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:19:58.880 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:19:58.880 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:19:58.882 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:19:58.882 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:19:58.883 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:19:58.883 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:19:58.884 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:20:02.356  WARN 12876 --- [http-nio-8888-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'roleIds' is not present]
+2019-03-29 16:22:41.803 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:22:41.804 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:22:41.808 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:22:43.950 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:22:43.952 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:22:43.955 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:22:43.956 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:22:43.957 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:22:43.958 DEBUG 12876 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:22:45.515 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:22:45.517 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:22:45.518 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:22:45.519 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:22:45.519 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:22:45.521 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:22:45.522 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:22:45.523 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:22:45.524 DEBUG 12876 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:22:50.828  WARN 12876 --- [http-nio-8888-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'roleIds' is not present]
+2019-03-29 16:25:32.670 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:25:32.671 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:25:32.675 DEBUG 12876 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:25:36.830 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:25:36.831 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:25:36.836 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:25:36.837 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:25:36.838 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:25:36.839 DEBUG 12876 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:25:38.010 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:25:38.011 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:25:38.011 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:25:38.011 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:25:38.013 DEBUG 12876 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:25:38.027 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:25:38.028 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:25:38.028 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:25:38.030 DEBUG 12876 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:25:43.801 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==>  Preparing: DELETE FROM sys_user_role WHERE userId=? 
+2019-03-29 16:25:43.802 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:25:43.861 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.deleteUserRoles  : <==    Updates: 1
+2019-03-29 16:25:43.881 DEBUG 12876 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:25:44.036 ERROR 12876 --- [http-nio-8888-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'id' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]] with root cause
 
-org.apache.shiro.io.SerializationException: Unable to serialize object [com.springboot.demo.sys.entity.SysUser@74151fc9].  In order for the DefaultSerializer to serialize this object, the [org.apache.shiro.subject.SimplePrincipalCollection] class must implement java.io.Serializable.
-	at org.apache.shiro.io.DefaultSerializer.serialize(DefaultSerializer.java:55)
-	at org.apache.shiro.mgt.AbstractRememberMeManager.serialize(AbstractRememberMeManager.java:496)
-	at org.apache.shiro.mgt.AbstractRememberMeManager.convertPrincipalsToBytes(AbstractRememberMeManager.java:350)
-	at org.apache.shiro.mgt.AbstractRememberMeManager.rememberIdentity(AbstractRememberMeManager.java:336)
-	at org.apache.shiro.mgt.AbstractRememberMeManager.rememberIdentity(AbstractRememberMeManager.java:311)
-	at org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:287)
-	at org.apache.shiro.mgt.DefaultSecurityManager.rememberMeSuccessfulLogin(DefaultSecurityManager.java:206)
-	at org.apache.shiro.mgt.DefaultSecurityManager.onSuccessfulLogin(DefaultSecurityManager.java:291)
-	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:285)
-	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256)
-	at com.springboot.demo.sys.rest.UserLoginController.submitLogin(UserLoginController.java:36)
-	at sun.reflect.GeneratedMethodAccessor306.invoke(Unknown Source)
+org.apache.ibatis.binding.BindingException: Parameter 'id' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:202)
+	at org.apache.ibatis.reflection.wrapper.MapWrapper.get(MapWrapper.java:45)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.GeneratedMethodAccessor370.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy55.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy56.assortUserRole(Unknown Source)
+	at com.springboot.demo.sys.service.SysUserService.assortUserRole(SysUserService.java:82)
+	at com.springboot.demo.sys.rest.SysUserRestController.assortRole(SysUserRestController.java:58)
+	at sun.reflect.GeneratedMethodAccessor367.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
@@ -112,232 +353,643 @@ org.apache.shiro.io.SerializationException: Unable to serialize object [com.spri
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.NotSerializableException: com.springboot.demo.sys.entity.SysUser
-	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
-	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
-	at java.util.HashSet.writeObject(HashSet.java:287)
-	at sun.reflect.GeneratedMethodAccessor309.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1028)
-	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1496)
-	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
-	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
-	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
-	at java.util.LinkedHashMap.internalWriteEntries(LinkedHashMap.java:333)
-	at java.util.HashMap.writeObject(HashMap.java:1362)
-	at sun.reflect.GeneratedMethodAccessor308.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1028)
-	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1496)
-	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
-	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
-	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
-	at java.io.ObjectOutputStream.defaultWriteObject(ObjectOutputStream.java:441)
-	at org.apache.shiro.subject.SimplePrincipalCollection.writeObject(SimplePrincipalCollection.java:274)
-	at sun.reflect.GeneratedMethodAccessor307.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1028)
-	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1496)
-	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
-	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
-	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
-	at org.apache.shiro.io.DefaultSerializer.serialize(DefaultSerializer.java:48)
-	... 78 common frames omitted
 
-2019-03-05 11:40:50.873  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$4ba7a37e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:50.896  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d9e1c349] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.129  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.151  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$cb61479] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.159  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.config.DataSourceConfig$$EnhancerBySpringCGLIB$$2bc635d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.222  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.254  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.262  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.654  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.672  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.676  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.685  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.691  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.692  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [com.springboot.demo.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:51.701  INFO 10292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:40:52.525  INFO 10292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-03-05 11:40:52.570  INFO 10292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-03-05 11:40:52.570  INFO 10292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-03-05 11:40:52.582  INFO 10292 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
-2019-03-05 11:40:52.583  INFO 10292 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2019-03-05 11:40:52.583  INFO 10292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2019-03-05 11:40:52.583  INFO 10292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2019-03-05 11:40:53.767  INFO 10292 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2019-03-05 11:40:54.136  INFO 10292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-03-05 11:40:54.136  INFO 10292 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5197 ms
-2019-03-05 11:40:54.959  INFO 10292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-03-05 11:40:55.284  INFO 10292 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-03-05 11:40:55.601  INFO 10292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-03-05 11:40:59.082  INFO 10292 --- [http-nio-8888-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-03-05 11:40:59.082  INFO 10292 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-03-05 11:40:59.111  INFO 10292 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
-2019-03-05 11:41:02.044  INFO 10292 --- [http-nio-8888-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-03-05 11:42:55.549  INFO 2724 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication on DESKTOP-IFH64UH with PID 2724 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
-2019-03-05 11:42:55.557 DEBUG 2724 --- [main] com.springboot.demo.DemoApplication      : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2019-03-05 11:42:55.561  INFO 2724 --- [main] com.springboot.demo.DemoApplication      : No active profile set, falling back to default profiles: default
-2019-03-05 11:42:57.624  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$4e248b14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:57.642  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc5eaadf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:57.859  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:57.880  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f32fc0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:57.888  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.config.DataSourceConfig$$EnhancerBySpringCGLIB$$2e431d6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:57.969  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.000  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.009  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.401  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.418  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.423  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.431  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.436  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.438  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [com.springboot.demo.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:58.446  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 11:42:59.281  INFO 2724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-03-05 11:42:59.326  INFO 2724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-03-05 11:42:59.327  INFO 2724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-03-05 11:42:59.339  INFO 2724 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
-2019-03-05 11:42:59.339  INFO 2724 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2019-03-05 11:42:59.340  INFO 2724 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2019-03-05 11:42:59.340  INFO 2724 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2019-03-05 11:43:00.429  INFO 2724 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2019-03-05 11:43:00.620  INFO 2724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-03-05 11:43:00.620  INFO 2724 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4924 ms
-2019-03-05 11:43:01.352  INFO 2724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-03-05 11:43:01.653  INFO 2724 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-03-05 11:43:02.003  INFO 2724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-03-05 11:43:02.012  INFO 2724 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 8.137 seconds (JVM running for 17.581)
-2019-03-05 11:44:12.314  INFO 2724 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-03-05 11:44:12.315  INFO 2724 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-03-05 11:44:12.345  INFO 2724 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
-2019-03-05 11:44:32.578  INFO 2724 --- [http-nio-8888-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-03-05 11:44:32.609 DEBUG 2724 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:44:32.742 DEBUG 2724 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:44:32.839 DEBUG 2724 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:45:10.821 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:45:10.823 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:45:10.829 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:46:37.516 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:46:37.519 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:46:37.522 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:46:41.413 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:46:41.414 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:46:41.418 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:46:54.828 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:46:54.830 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:46:54.835 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:46:55.580 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 11:46:55.581 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 11:46:55.655 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 11:47:30.044 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:47:30.046 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:47:30.049 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:47:30.533 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 11:47:30.534 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 11:47:30.540 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 11:47:43.467 DEBUG 2724 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 11:47:43.468 DEBUG 2724 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 11:47:43.474 DEBUG 2724 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 11:47:45.168 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 11:47:45.169 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 11:47:45.174 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 11:47:50.775 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:47:50.777 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:47:50.780 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:47:59.346 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:47:59.347 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:47:59.350 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:51:12.287 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:51:12.288 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:51:12.292 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:51:34.318 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:51:34.320 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 55555(String)
-2019-03-05 11:51:34.322 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 0
-2019-03-05 11:51:45.106 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:51:45.108 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:51:45.113 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:59:10.427 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:59:10.429 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:59:10.432 DEBUG 2724 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:59:22.423 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 11:59:22.424 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 11:59:22.427 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 11:59:22.972 DEBUG 2724 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 11:59:22.973 DEBUG 2724 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 11:59:22.978 DEBUG 2724 --- [http-nio-8888-exec-8] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 13:46:12.246 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 13:46:12.253 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 13:46:12.263 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 13:46:13.113 DEBUG 2724 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 13:46:13.115 DEBUG 2724 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 13:46:13.123 DEBUG 2724 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 13:46:46.140 DEBUG 2724 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 13:46:46.141 DEBUG 2724 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 13:46:46.146 DEBUG 2724 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 13:48:46.439 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 13:48:46.440 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 13:48:46.445 DEBUG 2724 --- [http-nio-8888-exec-9] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 14:07:48.922 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 14:07:48.923 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 14:07:48.929 DEBUG 2724 --- [http-nio-8888-exec-2] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 14:07:52.855 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 14:07:52.856 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 14:07:52.858 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 14:07:53.276 DEBUG 2724 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 14:07:53.278 DEBUG 2724 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 14:07:53.283 DEBUG 2724 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 14:08:08.483 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 14:08:08.485 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 14:08:08.487 DEBUG 2724 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 14:08:08.841 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 14:08:08.842 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 14:08:08.848 DEBUG 2724 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 15:27:55.153  INFO 1396 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication on DESKTOP-IFH64UH with PID 1396 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
-2019-03-05 15:27:55.162 DEBUG 1396 --- [main] com.springboot.demo.DemoApplication      : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2019-03-05 15:27:55.167  INFO 1396 --- [main] com.springboot.demo.DemoApplication      : No active profile set, falling back to default profiles: default
-2019-03-05 15:27:57.592  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$1b1dfe93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:57.633  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9581e5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.096  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.116  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$dc2c6f8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.124  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.config.DataSourceConfig$$EnhancerBySpringCGLIB$$fb3c90ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.185  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.217  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.226  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.599  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.618  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.622  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.631  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.636  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.638  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [com.springboot.demo.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:58.646  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-05 15:27:59.449  INFO 1396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-03-05 15:27:59.494  INFO 1396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-03-05 15:27:59.494  INFO 1396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-03-05 15:27:59.506  INFO 1396 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
-2019-03-05 15:27:59.506  INFO 1396 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2019-03-05 15:27:59.506  INFO 1396 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2019-03-05 15:27:59.507  INFO 1396 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2019-03-05 15:28:00.593  INFO 1396 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2019-03-05 15:28:00.792  INFO 1396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-03-05 15:28:00.792  INFO 1396 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5484 ms
-2019-03-05 15:28:01.370  INFO 1396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-03-05 15:28:01.666  INFO 1396 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-03-05 15:28:01.979  INFO 1396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-03-05 15:28:01.989  INFO 1396 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 8.24 seconds (JVM running for 18.261)
-2019-03-05 15:30:12.515  INFO 1396 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-03-05 15:30:12.515  INFO 1396 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-03-05 15:30:12.532  INFO 1396 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2019-03-05 15:30:15.515  INFO 1396 --- [http-nio-8888-exec-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-03-05 15:30:15.530 DEBUG 1396 --- [http-nio-8888-exec-10] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
-2019-03-05 15:30:15.652 DEBUG 1396 --- [http-nio-8888-exec-10] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 111111(String)
-2019-03-05 15:30:15.734 DEBUG 1396 --- [http-nio-8888-exec-10] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
-2019-03-05 15:31:57.962 DEBUG 1396 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 15:31:57.963 DEBUG 1396 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 15:31:57.984 DEBUG 1396 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
-2019-03-05 15:38:11.043 DEBUG 1396 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==>  Preparing: SELECT * FROM sys_menu; 
-2019-03-05 15:38:11.045 DEBUG 1396 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : ==> Parameters: 
-2019-03-05 15:38:11.055 DEBUG 1396 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getAllSysMenus   : <==      Total: 5
+2019-03-29 16:27:43.662  INFO 7908 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication on DESKTOP-IFH64UH with PID 7908 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+2019-03-29 16:27:43.669 DEBUG 7908 --- [main] com.springboot.demo.DemoApplication      : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-03-29 16:27:43.673  INFO 7908 --- [main] com.springboot.demo.DemoApplication      : No active profile set, falling back to default profiles: default
+2019-03-29 16:27:45.879  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.commom.config.ShiroConfig$$EnhancerBySpringCGLIB$$5885a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:45.935  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75717f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:46.406  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:46.440  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$3349c2af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:46.455  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.commom.config.DataSourceConfig$$EnhancerBySpringCGLIB$$671566bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:46.579  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:46.668  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:46.689  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:47.305  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:47.322  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:47.326  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:47.336  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:47.341  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:47.342  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myshiroRealm' of type [com.springboot.demo.commom.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:47.351  INFO 7908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:27:48.225  INFO 7908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-03-29 16:27:48.271  INFO 7908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-29 16:27:48.272  INFO 7908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-03-29 16:27:48.284  INFO 7908 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
+2019-03-29 16:27:48.284  INFO 7908 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-03-29 16:27:48.284  INFO 7908 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-03-29 16:27:48.285  INFO 7908 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-03-29 16:27:49.386  INFO 7908 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-03-29 16:27:49.593  INFO 7908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-29 16:27:49.594  INFO 7908 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5774 ms
+2019-03-29 16:27:50.206  INFO 7908 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-29 16:27:50.544  INFO 7908 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-29 16:27:50.894  INFO 7908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-03-29 16:27:50.903  INFO 7908 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 8.77 seconds (JVM running for 19.727)
+2019-03-29 16:29:58.907  INFO 7908 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-29 16:29:58.909  INFO 7908 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-29 16:29:58.934  INFO 7908 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-03-29 16:30:02.444  INFO 7908 --- [http-nio-8888-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-29 16:30:02.469 DEBUG 7908 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:30:02.604 DEBUG 7908 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 16:30:02.783 DEBUG 7908 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:30:04.251 DEBUG 7908 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:30:04.253 DEBUG 7908 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:30:04.293 DEBUG 7908 --- [http-nio-8888-exec-10] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:30:06.426 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:30:06.429 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:30:06.432 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:30:06.433 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:30:06.434 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:30:06.437 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:30:08.429 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:30:08.418 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:30:08.442 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:30:08.443 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:30:08.455 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:30:08.456 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:30:08.457 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:30:08.459 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:30:08.468 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 0
+2019-03-29 16:30:40.682 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:30:40.683 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:30:40.683 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:30:40.684 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:30:40.685 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 0
+2019-03-29 16:30:40.687 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:30:40.688 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:30:40.688 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:30:40.690 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:30:47.242 DEBUG 7908 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:30:47.243 DEBUG 7908 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:30:47.242 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:30:47.244 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:30:47.245 DEBUG 7908 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:30:47.246 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:30:47.247 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:30:47.247 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:30:47.248 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:30:50.511 DEBUG 7908 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:30:50.512 DEBUG 7908 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:30:50.513 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:30:50.514 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:30:50.514 DEBUG 7908 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 0
+2019-03-29 16:30:50.516 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:30:50.558 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:30:50.558 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:30:50.559 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:30:57.004 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:30:57.004 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:30:57.005 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:30:57.005 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:30:57.006 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 0
+2019-03-29 16:30:57.007 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:30:57.008 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:30:57.009 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:30:57.010 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:31:01.943 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==>  Preparing: DELETE FROM sys_user_role WHERE userId=? 
+2019-03-29 16:31:01.944 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:31:01.945 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.deleteUserRoles  : <==    Updates: 0
+2019-03-29 16:31:01.962 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:31:01.963 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: e575aa7e7d014614b55f386e94d4c16b(String), 6d5f35daa9304bdd85bb19e5f801eab4(String), 170a7f2452b146fc89f0040c3a6423ef(String)
+2019-03-29 16:31:02.034 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1
+2019-03-29 16:31:02.035 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:31:02.036 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: babc3ca593ab461f9e36603240a65b63(String), 6d5f35daa9304bdd85bb19e5f801eab4(String), a97f07516e1f42d1aadd8af25245278e(String)
+2019-03-29 16:31:02.110 DEBUG 7908 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1
+2019-03-29 16:34:18.161 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:34:18.162 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 16:34:18.165 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:34:19.435 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:34:19.436 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:34:19.456 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:35:03.082 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:35:03.083 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:35:03.086 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:35:03.087 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:35:03.088 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:35:03.090 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:35:04.818 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:35:04.819 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:35:04.820 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:35:04.820 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:35:04.822 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:35:04.822 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:35:04.823 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:35:04.823 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:35:04.825 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:35:14.433 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==>  Preparing: DELETE FROM sys_user_role WHERE userId=? 
+2019-03-29 16:35:14.434 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:35:14.544 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.deleteUserRoles  : <==    Updates: 2
+2019-03-29 16:35:14.546 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:35:14.546 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: 79c3dbfd540049d6950bc879fc3fdac1(String), 6d5f35daa9304bdd85bb19e5f801eab4(String), 170a7f2452b146fc89f0040c3a6423ef(String)
+2019-03-29 16:35:14.631 DEBUG 7908 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1
+2019-03-29 16:36:17.515 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:36:17.518 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:36:17.534 DEBUG 7908 --- [http-nio-8888-exec-5] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:36:20.469 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:36:20.470 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:36:20.475 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:36:20.477 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:36:20.478 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:36:20.480 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:36:23.506 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:36:23.506 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:36:23.507 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:36:23.507 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:36:23.510 DEBUG 7908 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:36:23.510 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:36:23.511 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:36:23.512 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:36:23.514 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:36:29.439 ERROR 7908 --- [http-nio-8888-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: com.springboot.demo.sys.rest.SysUserRestController.assortRole(Ljava/lang/String;Ljava/lang/String;)V] with root cause
+
+java.lang.NoSuchMethodError: com.springboot.demo.sys.rest.SysUserRestController.assortRole(Ljava/lang/String;Ljava/lang/String;)V
+	at com.zeroturnaround.jrebelbase.facade.v.throwWrappedNoSuchMethodError(SourceFile:179)
+	at com.zeroturnaround.jrebelbase.facade.v.checkMethodRemoved(SourceFile:200)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:40002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-03-29 16:37:16.604 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:37:16.605 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:37:16.612 DEBUG 7908 --- [http-nio-8888-exec-1] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:37:18.296 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:37:18.297 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:37:18.301 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:37:18.302 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:37:18.303 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:37:18.305 DEBUG 7908 --- [http-nio-8888-exec-6] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:37:19.330 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:37:19.330 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:37:19.331 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:37:19.331 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:37:19.334 DEBUG 7908 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:37:19.334 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:37:19.335 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:37:19.336 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:37:19.339 DEBUG 7908 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:37:21.874 ERROR 7908 --- [http-nio-8888-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: com.springboot.demo.sys.rest.SysUserRestController.assortRole(Ljava/lang/String;Ljava/lang/String;)V] with root cause
+
+java.lang.NoSuchMethodError: com.springboot.demo.sys.rest.SysUserRestController.assortRole(Ljava/lang/String;Ljava/lang/String;)V
+	at com.zeroturnaround.jrebelbase.facade.v.throwWrappedNoSuchMethodError(SourceFile:179)
+	at com.zeroturnaround.jrebelbase.facade.v.checkMethodRemoved(SourceFile:200)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:40002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-03-29 16:38:03.771  INFO 7676 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication on DESKTOP-IFH64UH with PID 7676 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+2019-03-29 16:38:03.803 DEBUG 7676 --- [main] com.springboot.demo.DemoApplication      : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-03-29 16:38:03.820  INFO 7676 --- [main] com.springboot.demo.DemoApplication      : No active profile set, falling back to default profiles: default
+2019-03-29 16:38:06.425  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.commom.config.ShiroConfig$$EnhancerBySpringCGLIB$$e501cb8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:06.453  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dfeee2c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:06.753  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:06.777  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$12c333f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:06.786  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.commom.config.DataSourceConfig$$EnhancerBySpringCGLIB$$468ed803] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:06.857  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:06.890  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:06.899  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:07.407  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:07.429  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:07.436  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:07.450  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:07.457  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:07.458  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myshiroRealm' of type [com.springboot.demo.commom.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:07.467  INFO 7676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:38:08.479  INFO 7676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-03-29 16:38:08.541  INFO 7676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-29 16:38:08.542  INFO 7676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-03-29 16:38:08.557  INFO 7676 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
+2019-03-29 16:38:08.558  INFO 7676 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-03-29 16:38:08.558  INFO 7676 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-03-29 16:38:08.559  INFO 7676 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-03-29 16:38:09.691  INFO 7676 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-03-29 16:38:10.112  INFO 7676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-29 16:38:10.113  INFO 7676 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6004 ms
+2019-03-29 16:38:11.057  INFO 7676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-29 16:38:11.442  INFO 7676 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-29 16:38:11.842  INFO 7676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-03-29 16:38:11.851  INFO 7676 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 9.876 seconds (JVM running for 20.017)
+2019-03-29 16:38:15.737  INFO 7676 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-29 16:38:15.738  INFO 7676 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-29 16:38:15.774  INFO 7676 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 36 ms
+2019-03-29 16:38:18.756  INFO 7676 --- [http-nio-8888-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-29 16:38:18.770 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:38:18.827 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 16:38:18.889 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:38:19.375 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:38:19.376 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:38:19.413 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:38:21.829 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:38:21.831 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:21.835 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:38:21.836 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:38:21.837 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:38:21.840 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:38:24.044 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:38:24.045 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:24.058 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:38:24.059 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:38:24.060 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:38:24.061 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:38:29.472 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:38:29.473 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:29.477 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:38:29.478 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:38:29.479 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:38:29.481 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:38:31.419 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:38:31.420 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:31.422 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:38:31.423 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:38:31.424 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:38:31.426 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:38:31.439 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:38:31.439 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:38:31.441 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:38:34.749 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:38:34.750 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:34.751 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:38:34.753 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:38:34.754 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:38:34.755 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:38:34.755 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:38:34.758 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:38:34.778 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:38:37.280 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:38:37.280 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:38:37.281 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:37.281 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:38:37.283 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:38:37.283 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:38:37.284 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:38:37.284 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:38:37.286 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:38:39.779 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:38:39.779 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:38:39.780 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:38:39.780 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:39.782 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:38:39.782 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:38:39.783 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:38:39.784 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:38:39.785 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:38:42.979 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:38:42.980 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:38:42.980 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:38:42.981 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:38:42.983 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:38:42.984 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:38:42.984 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:38:42.984 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:38:42.986 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:39:35.582 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:39:35.583 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:39:35.587 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:39:38.068 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:39:38.069 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:39:38.072 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:39:38.072 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:39:38.073 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:39:38.075 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:39:39.967 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:39:39.968 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:39:39.970 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:39:39.971 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:39:39.972 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:39:39.973 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:39:39.974 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:39:39.974 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:39:39.978 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:39:45.793 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:39:45.793 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:39:45.794 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:39:45.794 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:39:45.796 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:39:45.796 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:39:45.797 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:39:45.798 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:39:45.799 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:39:49.425 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:39:49.425 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:39:49.426 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:39:49.426 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:39:49.428 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:39:49.429 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:39:49.429 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:39:49.430 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:39:49.431 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:39:52.857 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:39:52.858 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:39:52.859 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:39:52.860 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:39:52.861 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:39:52.862 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:39:52.862 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:39:52.863 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:39:52.864 DEBUG 7676 --- [http-nio-8888-exec-5] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:39:55.152 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:39:55.152 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:39:55.153 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:39:55.154 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:39:55.155 DEBUG 7676 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 1
+2019-03-29 16:39:55.156 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:39:55.157 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:39:55.157 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:39:55.159 DEBUG 7676 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:39:57.098 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==>  Preparing: DELETE FROM sys_user_role WHERE userId=? 
+2019-03-29 16:39:57.099 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:39:57.170 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.deleteUserRoles  : <==    Updates: 1
+2019-03-29 16:39:57.176 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:39:57.177 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: 547d25fc98d641e0bdc74c1d2fe16717(String), 6d5f35daa9304bdd85bb19e5f801eab4(String), 170a7f2452b146fc89f0040c3a6423ef(String)
+2019-03-29 16:39:57.267 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1
+2019-03-29 16:39:57.268 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:39:57.269 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: c480fb5990534b45ae6d5831739a097c(String), 6d5f35daa9304bdd85bb19e5f801eab4(String), a97f07516e1f42d1aadd8af25245278e(String)
+2019-03-29 16:39:57.378 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1
+2019-03-29 16:48:53.851 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:48:53.852 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 16:48:53.854 DEBUG 7676 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:48:54.157 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:48:54.158 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:48:54.161 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:48:56.139 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:48:56.140 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:48:56.142 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:48:56.143 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:48:56.144 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:48:56.145 DEBUG 7676 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:48:57.795 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:48:57.796 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:48:57.798 DEBUG 7676 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:48:57.811 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:48:57.812 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:48:57.813 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:48:57.814 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:48:57.814 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:48:57.815 DEBUG 7676 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:49:00.949 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:49:00.950 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:49:00.952 DEBUG 7676 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:49:00.965 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:49:00.966 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:49:00.967 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:49:00.969 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:49:00.969 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:49:00.970 DEBUG 7676 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:49:25.255 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:49:25.255 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:49:25.259 DEBUG 7676 --- [http-nio-8888-exec-3] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:49:45.411  INFO 7108 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication on DESKTOP-IFH64UH with PID 7108 (E:\GitHub\demo01\target\classes started by scaf_xs in E:\GitHub\demo01)
+2019-03-29 16:49:45.420 DEBUG 7108 --- [main] com.springboot.demo.DemoApplication      : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-03-29 16:49:45.423  INFO 7108 --- [main] com.springboot.demo.DemoApplication      : No active profile set, falling back to default profiles: default
+2019-03-29 16:49:48.439  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.demo.commom.config.ShiroConfig$$EnhancerBySpringCGLIB$$1ccd07f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:48.466  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$17ba1f29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:48.790  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:48.823  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4a8e7059] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:48.847  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.springboot.demo.commom.config.DataSourceConfig$$EnhancerBySpringCGLIB$$7e5a1466] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:48.993  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.085  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.106  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.857  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.878  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.886  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.905  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.914  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserService' of type [com.springboot.demo.sys.service.SysUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.916  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myshiroRealm' of type [com.springboot.demo.commom.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:49.936  INFO 7108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-29 16:49:51.387  INFO 7108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-03-29 16:49:51.431  INFO 7108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-29 16:49:51.432  INFO 7108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-03-29 16:49:51.447  INFO 7108 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
+2019-03-29 16:49:51.447  INFO 7108 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-03-29 16:49:51.447  INFO 7108 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-03-29 16:49:51.448  INFO 7108 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-03-29 16:49:52.546  INFO 7108 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-03-29 16:49:52.793  INFO 7108 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-29 16:49:52.794  INFO 7108 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7224 ms
+2019-03-29 16:49:53.443  INFO 7108 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-29 16:49:53.785  INFO 7108 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-29 16:49:54.127  INFO 7108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-03-29 16:49:54.136  INFO 7108 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 11.058 seconds (JVM running for 21.313)
+2019-03-29 16:50:01.307  INFO 7108 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-29 16:50:01.307  INFO 7108 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-29 16:50:01.346  INFO 7108 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 39 ms
+2019-03-29 16:50:04.159  INFO 7108 --- [http-nio-8888-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-29 16:50:04.173 DEBUG 7108 --- [http-nio-8888-exec-5] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:50:04.236 DEBUG 7108 --- [http-nio-8888-exec-5] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 16:50:04.299 DEBUG 7108 --- [http-nio-8888-exec-5] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:50:04.693 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:50:04.694 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:50:04.732 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:50:06.733 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:50:06.736 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:50:06.739 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:50:06.740 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:50:06.740 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:50:06.743 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:50:08.320 DEBUG 7108 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:50:08.321 DEBUG 7108 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:50:08.334 DEBUG 7108 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:50:08.361 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:50:08.363 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:50:08.365 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:50:08.366 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:50:08.367 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:50:08.369 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:50:11.358 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:50:11.359 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:50:11.361 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:50:11.375 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:50:11.376 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:50:11.378 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:50:11.379 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:50:11.380 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:50:11.381 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:50:14.165 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:50:14.166 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:50:14.168 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 2
+2019-03-29 16:50:14.184 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:50:14.185 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:50:14.187 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:50:14.188 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:50:14.189 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:50:14.190 DEBUG 7108 --- [http-nio-8888-exec-7] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:50:19.354 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==>  Preparing: DELETE FROM sys_user_role WHERE userId=? 
+2019-03-29 16:50:19.355 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:50:19.439 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.deleteUserRoles  : <==    Updates: 2
+2019-03-29 16:50:19.445 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:50:19.446 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: d5c4e5fa2e61451da246504c1ebed94f(String), a4dff746b64d4328836ed8eee7f4b82e(String), (String)
+2019-03-29 16:50:19.569 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1
+2019-03-29 16:50:21.570 DEBUG 7108 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:50:21.571 DEBUG 7108 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:50:21.572 DEBUG 7108 --- [http-nio-8888-exec-8] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 0
+2019-03-29 16:50:21.585 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:50:21.586 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:50:21.588 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:50:21.588 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:50:21.588 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:50:21.590 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:56:19.616 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:56:19.618 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2019-03-29 16:56:19.621 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:56:19.855 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:56:19.856 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:56:19.859 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 0
+2019-03-29 16:56:22.904 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:56:22.906 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:56:22.910 DEBUG 7108 --- [http-nio-8888-exec-4] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 0
+2019-03-29 16:56:53.444 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==>  Preparing: SELECT id,name,password,email,lastLoginTime,status,createTime FROM sys_user WHERE name =? AND password=?; 
+2019-03-29 16:56:53.445 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : ==> Parameters: demo(String), fe01ce2a7fbac8fafaed7c982a04e229(String)
+2019-03-29 16:56:53.447 DEBUG 7108 --- [http-nio-8888-exec-3] c.s.d.s.m.SysUserMapper.getUserByMap     : <==      Total: 1
+2019-03-29 16:56:53.729 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==>  Preparing: select * from sys_menu m where m.`code` in (select rm.menuId from sys_role_menu rm where rm.roleId in (select ur.roleId from sys_user_role ur where ur.userId=?)); 
+2019-03-29 16:56:53.730 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getMenusByUser   : ==> Parameters: 6d5f35daa9304bdd85bb19e5f801eab4(String)
+2019-03-29 16:56:53.735 DEBUG 7108 --- [http-nio-8888-exec-6] c.s.d.s.m.SysMenuMapper.getMenusByUser   : <==      Total: 4
+2019-03-29 16:56:58.678 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==>  Preparing: SELECT * FROM sys_user limit ?, ?; 
+2019-03-29 16:56:58.679 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:56:58.684 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getAllUsers      : <==      Total: 2
+2019-03-29 16:56:58.685 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_user; 
+2019-03-29 16:56:58.686 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : ==> Parameters: 
+2019-03-29 16:56:58.688 DEBUG 7108 --- [http-nio-8888-exec-9] c.s.d.s.m.SysUserMapper.getUsersCount    : <==      Total: 1
+2019-03-29 16:57:00.558 DEBUG 7108 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==>  Preparing: select r.id,r.name,r.description from sys_user u,sys_user_role ur,sys_role r where u.id=ur.userId and ur.roleId=r.id and u.id=? 
+2019-03-29 16:57:00.581 DEBUG 7108 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:57:00.583 DEBUG 7108 --- [http-nio-8888-exec-10] c.s.d.s.m.SysRoleMapper.getUserRole      : <==      Total: 0
+2019-03-29 16:57:00.599 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==>  Preparing: SELECT * FROM sys_role limit ?, ?; 
+2019-03-29 16:57:00.600 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : ==> Parameters: 0(Integer), 10(Integer)
+2019-03-29 16:57:00.604 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getAllRoles      : <==      Total: 2
+2019-03-29 16:57:00.605 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==>  Preparing: SELECT COUNT(id) FROM sys_role; 
+2019-03-29 16:57:00.606 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : ==> Parameters: 
+2019-03-29 16:57:00.607 DEBUG 7108 --- [http-nio-8888-exec-1] c.s.d.s.m.SysRoleMapper.getRolesCount    : <==      Total: 1
+2019-03-29 16:57:03.946 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==>  Preparing: DELETE FROM sys_user_role WHERE userId=? 
+2019-03-29 16:57:03.947 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.deleteUserRoles  : ==> Parameters: a4dff746b64d4328836ed8eee7f4b82e(String)
+2019-03-29 16:57:03.948 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.deleteUserRoles  : <==    Updates: 0
+2019-03-29 16:57:03.952 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:57:03.953 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: dcec81d02c094159ac0e26ca49e98df6(String), a4dff746b64d4328836ed8eee7f4b82e(String), 170a7f2452b146fc89f0040c3a6423ef(String)
+2019-03-29 16:57:04.012 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1
+2019-03-29 16:57:04.014 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.assortUserRole   : ==>  Preparing: INSERT INTO sys_user_role (id,userId,roleId) VALUES (?,?,?) 
+2019-03-29 16:57:04.016 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.assortUserRole   : ==> Parameters: b7108aa99d384cd38e8044753e6b3090(String), a4dff746b64d4328836ed8eee7f4b82e(String), a97f07516e1f42d1aadd8af25245278e(String)
+2019-03-29 16:57:04.090 DEBUG 7108 --- [http-nio-8888-exec-2] c.s.d.s.m.SysUserMapper.assortUserRole   : <==    Updates: 1

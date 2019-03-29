@@ -10,7 +10,7 @@ import java.util.Date;
  */
 
 public class SysUser {
-    private int id;
+    private String id;
     private String name;
     private String password;
     private String email;
@@ -23,21 +23,21 @@ public class SysUser {
 
     public SysUser(){}
 
-    public SysUser(SysUser sysUser){
-        this.id=sysUser.getId();
-        this.name=sysUser.getName();
-        this.password=sysUser.getPassword();
-        this.email=sysUser.getEmail();
-        this.lastLoginTime=sysUser.getLastLoginTime();
-        this.status=sysUser.getStatus();
-        this.createTime=sysUser.getCreateTime();
+    public SysUser(String id, String name, String password, String email, Date lastLoginTime, String status, Date createTime) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.email = email;
+        this.lastLoginTime = lastLoginTime;
+        this.status = status;
+        this.createTime = createTime;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -1,0 +1,19 @@
+div.content-title div.bg {
+    width: 125px;
+    height: 37px;
+    padding-left: 12px;
+    padding-right: 10px;
+    border-top-left-radius: 2px;
+    background-color: #ea4d2e;
+    background-image: url(../images/bg-title.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+div.content-header{
+    margin-top: 25px;
+}
+div h4{
+    font-size: 20px;
+    padding-top: 8px;
+    color: #fff;
+}

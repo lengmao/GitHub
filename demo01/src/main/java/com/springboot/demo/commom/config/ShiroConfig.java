@@ -5,7 +5,6 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -19,8 +18,10 @@ import java.util.Map;
 public class ShiroConfig {
 
     @Bean
-    public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager){
-        ShiroFilterFactoryBean shiroFilterFactoryBean=new ShiroFilterFactoryBean();
+    public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
+
+        ShiroFilterFactoryBean shiroFilterFactoryBean;
+        shiroFilterFactoryBean = new ShiroFilterFactoryBean();
 
         System.out.println("Shiro拦截器注入..............");
         /**
@@ -29,13 +30,14 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setSecurityManager(securityManager);
 
         //拦截器
-        Map<String,String> filter=new LinkedHashMap<>();
+        Map<String, String> filter = new LinkedHashMap<>();
 
         /**
          * 配置不会被拦截的链接，顺序执行
          */
-        filter.put("/assets/**","anon");
-        filter.put("/submitLogin","anon");
+        filter.put("/assets/**", "anon");
+        filter.put("/login", "anon");
+        filter.put("/submitLogin", "anon");
 
         //配置退出 过滤器,其中的具体的退出代码Shiro已经替我们实现了
         filter.put("/logout", "logout");
@@ -44,7 +46,7 @@ public class ShiroConfig {
          * 需要拦截的链接，从上向下顺序执行，一般将 /**放在最为下边
          * authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问
          */
-        filter.put("/**","authc");
+        filter.put("/**", "authc");
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filter);
 
@@ -52,7 +54,6 @@ public class ShiroConfig {
          * 如果不设置默认会自动寻找Web工程根目录下的"/login.html"页面
          */
         shiroFilterFactoryBean.setLoginUrl("/login");
-
         /**
          * 登录成功要跳转的页面
          */
@@ -63,21 +64,21 @@ public class ShiroConfig {
          */
         shiroFilterFactoryBean.setUnauthorizedUrl("/403");
 
-        return  shiroFilterFactoryBean;
+        return shiroFilterFactoryBean;
     }
 
     @Bean
-    public SecurityManager securityManager(){
-        DefaultWebSecurityManager securityManager=new DefaultWebSecurityManager();
+    public SecurityManager securityManager() {
+        DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
 
         // 设置realm.
-        securityManager.setRealm(myShiroRealm());
+        securityManager.setRealm(myshiroRealm());
         return securityManager;
     }
 
     @Bean
-    public MyShiroRealm myShiroRealm(){
-        MyShiroRealm myShiroRealm=new MyShiroRealm();
-        return myShiroRealm;
+    public MyShiroRealm myshiroRealm() {
+        MyShiroRealm myshiroRealm = new MyShiroRealm();
+        return myshiroRealm;
     }
 }

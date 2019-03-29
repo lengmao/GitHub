@@ -1,21 +1,22 @@
 $(function () {
-    util.get('menuList', {}, function (res) {
+    util.get('/sys/userMenu', {}, function (res) {
         var $container = $('#menuNav');
         $container.empty();
-        createMenuEle($container.get(0), res);
+        var tree=util.listTree(res);
+        createMenuEle($container.get(0), tree);
     })
 });
 
 //动态切换iframe里边的内容
-function pageTo (href,name) {
-    var iframe=document.createElement('iframe');
-    iframe.setAttribute('src',href);
-    iframe.setAttribute('height','100%');
-    iframe.setAttribute('width','100%');
-    iframe.setAttribute('scrolling','yes');
-    iframe.setAttribute('frameborder','0');
-    iframe.setAttribute('margin-left','0px');
-    iframe.setAttribute('name',name);
+function pageTo(href, name) {
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', href);
+    iframe.setAttribute('height', '100%');
+    iframe.setAttribute('width', '100%');
+    iframe.setAttribute('scrolling', 'yes');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('margin-left', '0px');
+    iframe.setAttribute('name', name);
     $('#iframeContent').empty().append(iframe);
 }
 
@@ -52,16 +53,16 @@ function createMenuEle(acc, array) {
             })();
             continue;
         }
-        a.onclick = (function (url,name) {
+        a.onclick = (function (url, name) {
             return function () {
-                pageTo(url,name);
+                pageTo(url, name);
             }
-        })(array[i].url,array[i].name);
+        })(array[i].url, array[i].name);
         iEle.setAttribute('class', array[i].icon);
         spanEle.innerHTML = array[i].name;
         a.appendChild(iEle);
         a.appendChild(spanEle);
-        a.setAttribute('href','#');
+        a.setAttribute('href', '#');
         li.appendChild(a);
     }
     return acc;

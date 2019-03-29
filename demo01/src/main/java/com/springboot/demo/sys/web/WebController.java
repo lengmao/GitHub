@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("")
 public class WebController {
-
+    /**
+     * 用户登录，主页页面跳转控制
+     */
     @RequestMapping("/login")
     public String login() {
         return "/login";
@@ -31,5 +33,23 @@ public class WebController {
     @RequestMapping("/404")
     public String nourl() {
         return "/error/404";
+    }
+
+    /**
+     * 左侧菜单点击对应页面跳转(注:此页面路径对应数据库中的url)
+     */
+    @RequestMapping("/user-list")
+    public String userList() {
+        return "/sys/user-list";
+    }
+
+    @RequestMapping("/menu-list")
+    public String menuList() {
+        return "/sys/menu-list";
+    }
+
+    @RequestMapping("/role-list")
+    public String roleList() {
+        return "/sys/role-list";
     }
 }

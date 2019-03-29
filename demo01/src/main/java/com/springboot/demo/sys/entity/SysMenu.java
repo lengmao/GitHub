@@ -10,21 +10,20 @@ import java.util.List;
  */
 
 public class SysMenu {
-    private int id;
+    private String id;
     private  String name;
     private String parentCode;
     private String code;
     private String url;
     private String icon;
-    private int order;
     private String description;
     private List<SysMenu> childs;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+        public void setId(String id) {
         this.id = id;
     }
 
@@ -66,14 +65,6 @@ public class SysMenu {
 
     public void setIcon(String icon) {
         this.icon = icon;
-    }
-
-    public int getOrder() {
-        return order;
-    }
-
-    public void setOrder(int order) {
-        this.order = order;
     }
 
     public String getDescription() {

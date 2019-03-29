@@ -2,6 +2,8 @@ package com.springboot.demo.busi.service;
 
 import com.springboot.demo.busi.entity.MyTestEntity;
 import com.springboot.demo.busi.mapper.MyTestMapper;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.session.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +21,7 @@ public class MyTestService {
     @Autowired
     MyTestMapper myTestMapper;
 
-    public List<MyTestEntity> getList(){
+    public List<MyTestEntity> getList() {
         return myTestMapper.getList();
     }
 }

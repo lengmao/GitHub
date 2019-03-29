@@ -2,9 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap-table.min.css">
+    <link rel="stylesheet" href="/assets/vendor/toastr/toastr.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
 </head>
 <body>
-<h2>测试页面</h2>
+<div class="container-fluid">
+
+    <!-- 页面标题 -->
+    <div class="content-title row">
+        <div class="bg">
+            <h4>用户管理</h4>
+        </div>
+    </div>
+
+    <!-- 查询、添加区-->
+    <div class="row">
+        <div class="col-md-12 content-header">
+            <div class="pull-left form-inline">
+                <button id="add-btn" type="button" class="btn btn-default">新增</button>
+            </div>
+            <div class="pull-right form-inline">
+                <div class="form-group">
+                    <button id="search-btn" type="button" class="btn btn-default">
+                        <i class="fa fa-search"></i>&nbsp;查询
+                    </button>
+                    <input type="text" onchange="javascript:$('#search-btn').click();"
+                           class="form-control" id="name" placeholder="请输入名称">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 表格 -->
+    <table id="tableId"></table>
+</div>
+
+
+<!-- 添加、修改模态框-->
+<div id="editModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" cancel="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="editTitle"></h3>
+            </div>
+            <div class="modal-body" style="height: 300px">
+                <form class="form-horizontal" id="form" novalidate>
+                    <div class="form-group">
+                        <input type="hidden" name="id">
+                        <label class="col-sm-2 control-label">名称</label>
+                        <div class="col-sm-8">
+                            <input name="name" type="text" class="form-control" placeholder="请输入名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">邮箱</label>
+                        <div class="col-sm-8">
+                            <input name="email" type="email" class="form-control" placeholder="请输入邮箱地址">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-8">
+                            <input name="password" type="password" class="form-control" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">确认密码</label>
+                        <div class="col-sm-8">
+                            <input name="rePassword" type="password" class="form-control" placeholder="请再次输入密码">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <label class="col-sm-2 control-label">状态</label>
+                        <div class="col-sm-8">
+                            <input name="status" type="checkbox" class="form-check-input">
+                            <label class="form-check-label">是否激活</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" cancel="close">close</button>
+                <button type="submit" mark="add" class="btn btn-primary">Save Change</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="assortRolesModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" cancel="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="editTitle"></h3>
+            </div>
+            <div class="modal-body" style="height: 300px">
+                <table id="roleTable" class="table table-bordered"></table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" cancel="close">close</button>
+                <button id="assortRoles" class="btn btn-primary">Save Change</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+<script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap-table.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap-table-zh-CN.js"></script>
+<script src="/assets/vendor/toastr/toastr.js"></script>
+<script src="/js/table.js"></script>
+<script src="/js/sys/identity/user-list.js"></script>
+<script src="/js/util.js"></script>
+<script type="text/javascript">
+    toastr.options.positionClass = 'toast-top-center';
+</script>
+
 </html>
