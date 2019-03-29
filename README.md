@@ -35,7 +35,7 @@ demo01
                                                    |--mapper  
                                                    |--rest  
                                                    |--web 页面定向  
-                |--resource 静态资源  
+               |--resource 静态资源  
                           |--mapper xml映射文件 sql写于此处  
                           |--static js\css文件  
                           |--templates html文件  
