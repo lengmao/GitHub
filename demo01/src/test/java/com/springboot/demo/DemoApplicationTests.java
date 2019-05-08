@@ -1,6 +1,7 @@
 package com.springboot.demo;
 
 
+import com.springboot.demo.busi.service.MyTestService;
 import com.springboot.demo.commom.config.DataSourceConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,8 +16,13 @@ public class DemoApplicationTests {
 	@Autowired
     DataSourceConfig applicationConfig;
 
+	@Autowired
+	MyTestService myTestService;
+
 	@Test
 	public void getDataSource() {
+
+		System.out.println(myTestService.getList());
 	}
 }
 

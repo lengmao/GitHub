@@ -3,7 +3,6 @@ package com.springboot.demo.sys.mapper;
 import com.springboot.demo.sys.entity.SysMenu;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 /**
@@ -29,7 +28,7 @@ public interface SysMenuMapper {
     List<SysMenu> getAllMenu();
 
     /**
-     * 创建用户
+     * 创建菜单
      * @param sysMenu
      */
     void create(SysMenu sysMenu);

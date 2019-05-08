@@ -15,7 +15,8 @@
     <select id="getMenusByUser" resultType="com.springboot.demo.sys.entity.SysMenu">
         select * from sys_menu m where m.`code` in
         (select rm.menuId from sys_role_menu rm where rm.roleId in
-        (select ur.roleId from sys_user_role ur where ur.userId=#{userId}));
+        (select ur.roleId from sys_user_role ur where ur.userId=#{userId}))
+        order by code;
     </select>
 
     <select id="getAllMenu" resultType="com.springboot.demo.sys.entity.SysMenu">
