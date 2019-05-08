@@ -1,0 +1,17 @@
+
+server:
+  port: 8888
+
+spring:
+  datasource:
+  #连接MySQL
+    url: jdbc:mysql://localhost:3306/mydatabase?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
