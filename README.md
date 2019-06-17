@@ -66,8 +66,11 @@ demo01
 
 # 5、demo
 #### spring boot 整合mybatis通用增删改查接口、生产者消费者模式的rabbitMq示例
+
 1、这是一个使用spring boot整合mybatis和rabbitMQ的简单示例。使用通用的CRUD接口，一些简单的操作我们将不必自己写sql语句，只需要写自己业务中比较复杂的
 sql，是的自定义比较灵活。
+
 2、rabbitMQ部分是自己在服务器安装了rabbitMQ,可以直接页面访问和查看rabbitMQ的一些信息，然后通过代码操作rabbitMQ,此示例较为简单，后面会继续学习并丰
 富。
+
 3、此实例后续会添加结合shiro实现登录功能和session自动管理功能。
