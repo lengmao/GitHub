@@ -1,0 +1,32 @@
+1、编译安装
+2、rpm安装:包
+	rpm -qa 查询已安装的所有包
+	rpm -q PACKAGE_NAME 查询指定包是否安装
+	rpm -qi PACKAGE_NAME 查询指定包的说明信息
+	rpm -ql PACKAGE_NAME 查询指定包安装后生成的文件列表
+	rpm -qc PACKAGE_NAME 查询指定包安装的配置文件
+	rpm -qd PACKAGE_NAME 查询指定包的帮助文件
+	rpm -q --scripts PACKAGE_NAME 查询指定包中包含的脚本
+	rpm -qf /path/to/somefile 查询文件是由哪个rpm包生成的
+	
+
+3、yum安装:仓库
+
+	yum 命令
+		yum repolist
+		yum clean all
+		yum makecache
+		yum update
+	查询
+		yum list
+		yum search
+		yum info
+	安装&卸载
+		yum install
+		remove|erase
+	yum命令:分组
+		yum grouplist
+		yum groupinfo
+		yum groupinstall
+		yum groupremove
+		yum groupupdate

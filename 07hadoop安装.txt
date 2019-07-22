@@ -1,0 +1,192 @@
+一、操作系统环境
+	1、依赖软件 ssh jdk
+	2、环境配置 java_home 
+	3、免密钥
+		将node01的公钥放到node02/node03/node04的.ssh目录下并修改公钥名称为node.pub(scp id_dsa.pub node02:`pwd`/node01.pub)
+		将公钥中的内容追加到.ssh下的authorized_keys文件中(cat node01.pub >> authorized_keys)
+	4、时间同步(每个节点的时间同步)
+	5、hosts映射文件 hostname主机名修改
+
+二、hadoop安装
+	1、基于hadoop1.x
+		伪分布式安装
+			1、/opt/hadoop/
+			2、配置文件修改java_home(此处配置java_home的目的是免密钥登录是加载java配置，
+				因为ssh远程登录过程中不会加载/etc/profile文件)
+			3、角色在哪里启动
+			4、配置hadoop环境变量，在hadoop安装目录/etc/hadoop xx-ens.sh文件中配置java_home
+			5、在core-site.xml中配置hadoop节点信息，hdfs-site.xml配置secondarynamenode， salves配置datanode
+		
+		完全分布式安装
+			1、规划 node01  -->NameNode  node02/node03/node04 -->DataNode   node02 -->secondaryNameNode
+			2、系统环境 java环境/配置免密钥登录/时间同步/host和hostname
+			3、修改hadoop配置，同伪分布式中的4/5步，配置好之后可将hadoop包scp到其他节点
+			4、格式化namenode节点 (hdfs namenode -format)
+		
+	2、基于hadoop2.x的ha模式
+		hadoop1.0中的HDFS和MapRedice在高可用、扩展性方面存在问题
+			HDFS存在问题 
+				1、NameNode单点故障，难以支持生产环境 
+					解决：(HA) 2.0通过主备NameNode解决
+				2、NameNode压力过大，且内存受限，影响扩展
+			MapReduce问题  
+				1、JobTracker访问压力大，影响系统扩展性 
+				2、难以支持MapReduce之外的计算框架，如spark storm等
+		高可用HA (主NameNode和备NameNode，通过ZK,ZKFS,JN连接)
+		联邦机制 (多个客户端多个NameNode公用一个DataNode集群，各客户端互不影响，给每个客户端的NameNode做高可用)
+	3、hadoop高可用配置
+		官方文档
+		zookeeper配置
+			1、环境变量配置
+			2、修改zookeeper配置文件 zookeeper/conf（node02,node03,node04配置zookeeper）
+				zookeeper&&ZKFC
+				zoo.cfg配置
+					dataDir=/var/hadoop/zk
+					server.1=172.16.17.12:2888:3888
+					server.2=172.16.17.13:2888:3888
+					server.3=172.16.17.14:2888:3888
+				启动  zkService.sh  start 会出现leader和follower
+		
+		zookeeper&&ZKFC高可用（HA模式）	
+		1、hadoop配置(node01/node02/node03/node04都配置，且配置都相同 node01/node02为namenode)
+				1、hdfs-site.xml配置
+				2、core-site.xml配置
+				3、免密钥配置  
+					node01<————>node02 ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa(node01先生成密钥对()->cat id_dsa.pub >> authorized_keys(登录自身免密)-> scp id_dsa.pub node02:`pwd`/node01.pub(node01的密钥放入node02)->cat node01.pub >>authorized_keys(node01免密钥登录node02)——>反之一样
+				4、启动journalnode(node01/node02) (hadoop-daemon.sh start journalnode)
+				5、格式化(在node01上) hdfs namenode -format
+				6、启动(在node01上) hadoop-daemon.sh start namenode
+				7、node02上启动namenode standby (hadoop-daemon.sh start namenode)
+				8、格式化zookeeper(node01上)  hdfs zkfc -formatZK
+				9、启动zkfc hadoop-daemon.sh   start  zkfc
+				10、在装有zookeeper的(node02/node03/node04/)上启动 zkCli.sh 看到zookeeper和hadoop-ha的包
+		2、yarn高可用配置
+			1、配置mapred-site.xml 
+			2、配置yarn-site.xml
+			3、node01上启动yarn (start-yarn.sh start)
+			4、在node03/node04上启动resourcemanager (yarn-daemon.sh start resourcemanager) 
+			
+			hdfs-site.xml文件配置
+			<configuration>
+				<!-- set the num of block  -->
+				<property >
+						<name>dfs.replication</name>
+						<value>2</value>
+					</property>
+				<property>
+					<name>dfs.nameservices</name>
+					<value>mycluster</value>
+				</property>
+				<property>
+					<name>dfs.ha.namenodes.mycluster</name>
+					<value>nn1,nn2</value>
+				</property>
+				<property>
+					<name>dfs.namenode.rpc-address.mycluster.nn1</name>
+					<value>node01:8020</value>
+				</property>
+				<property>
+					<name>dfs.namenode.rpc-address.mycluster.nn2</name>
+					<value>node02:8020</value>
+				</property>
+				<property>
+					<name>dfs.namenode.http-address.mycluster.nn1</name>
+					<value>node01:50070</value>
+				</property>
+				<property>
+					<name>dfs.namenode.http-address.mycluster.nn2</name>
+					<value>node02:50070</value>
+				</property>	
+				<property>
+					<name>dfs.namenode.shared.edits.dir</name>
+					<value>qjournal://node01:8485;node02:8485;node03:8485/mycluster</value>
+				</property>
+				<property>
+					<name>dfs.journalnode.edits.dir</name>
+					<value>/var/hadoop/ha/jn</value>
+				</property>
+				<property>
+					<name>dfs.client.failover.proxy.provider.mycluster</name>
+					<value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+				</property>
+				<property>
+					<name>dfs.ha.fencing.methods</name>
+					<value>sshfence</value>
+				</property>
+				<property>
+					<name>dfs.ha.fencing.ssh.private-key-files</name>
+					<value>/root/.ssh/id_dsa</value>
+				</property>
+			</configuration>
+		
+		core-site.xml问价配置
+			<configuration>
+				<!-- Set namenode  -->
+				<property>
+						<name>fs.defaultFS</name>
+						<value>hdfs://mycluster</value>
+				</property>
+				<!-- Set the data of hadoop   -->
+				<property>
+						<name>hadoop.tmp.dir</name>
+						<value>/var/hadoop/ha</value>
+				</property>
+				<property>
+						<name>ha.zookeeper.quorum</name>
+						<value>node02:2181,node03:2181,node04:2181</value>
+				</property>
+			</configuration>
+	
+		mapred-site.xml配置
+			<configuration>
+				<property>
+					<name>mapreduce.framework.name</name>
+					<value>yarn</value>
+				</property>
+			</configuration>
+		
+		yarn-site.xml配置
+			<configuration>
+			<!-- Site specific YARN configuration properties -->
+			<property>
+				<name>yarn.nodemanager.aux-services</name>
+				<value>mapreduce_shuffle</value>
+			</property>
+			<property>
+			<name>yarn.resourcemanager.ha.enabled</name>
+			<value>true</value>
+			</property>
+			<property>
+			<name>yarn.resourcemanager.cluster-id</name>
+			<value>cluster1</value>
+			</property>
+			<property>
+			<name>yarn.resourcemanager.ha.rm-ids</name>
+			<value>rm1,rm2</value>
+			</property>
+			<property>
+			<name>yarn.resourcemanager.hostname.rm1</name>
+			<value>node03</value>
+			</property>
+			<property>
+			<name>yarn.resourcemanager.hostname.rm2</name>
+			<value>node04</value>
+			</property>
+			<property>
+			<name>yarn.resourcemanager.zk-address</name>
+			<value>node02:2181,node03:2181,node04:2181</value>
+			</property>
+			</configuration>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

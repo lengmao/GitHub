@@ -1,0 +1,8 @@
+HBase介绍
+	HBase架构：
+		Client：包含访问hbase的接口，并维护cache来加快对hbase的访问
+		Zookeeper：
+			1、保证任何时候，集群中只有一个master
+			2、存储所有region的寻址入口
+			3、实时监控regionserver的上线和下线信息，并实时通知master
+			4、存储hbase的schema和table的元数据
