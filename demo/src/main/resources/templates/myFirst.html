@@ -6,5 +6,21 @@
 </head>
 <body>
 <h2>这是我的第一个页面</h2>
+<h3>文件上传和下载</h3>
+<p>1、文件上传</p>
+<form action="upload" method="post" enctype="multipart/form-data">
+    选择文件：<input type="file" name="file">
+    <input type="submit">
+</form>
+<hr/>
+<p>2、文件下载</p>
+<a href="/download">文件下载</a>
+<hr/>
+<p>3、多文件上传</p>
+<form>
+    <p> 选择文件：<input type="file" name="file"/></p>>
+    <p> 选择文件：<input type="file" name="file"/></p>
+    <p><input type="submit"></p>
+</form>
 </body>
 </html>

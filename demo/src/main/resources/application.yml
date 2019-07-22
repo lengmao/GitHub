@@ -40,11 +40,11 @@ spring:
   # rabbitmq基本配置
   rabbitmq:
     # 主机地址
-    addresses: 127.0.0.1
+    addresses: 172.96.217.239
     # 端口号
     port: 5672
-    username: root
-    password: root
+    username: guest
+    password: guest
     # 设置虚拟主机
     virtual-host: /
     # 连接超时间

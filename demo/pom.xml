@@ -73,6 +73,14 @@
 			<artifactId>mapper-spring-boot-starter</artifactId>
 			<version>1.1.4</version>
 		</dependency>
+
+		<!--文件上传下载 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
