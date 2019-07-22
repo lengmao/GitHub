@@ -1,3 +1,4 @@
+#setting
 server:
   port: 8888
   servlet:
@@ -72,6 +73,7 @@ logging:
   level:
    #打印SQL信息
    com.lm.pag.mapper: debug
+   
 
 
 
