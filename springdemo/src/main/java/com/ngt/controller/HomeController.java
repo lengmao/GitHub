@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 /**
  * @author scaf_xs
  * @ClassName: HomeController
- * @Description: TODO(这里用一句话描述这个类的作用)
+ * @Description: TODO(restful形式接口)
  * @date 2019/7/17 17:49
  */
 @Controller
