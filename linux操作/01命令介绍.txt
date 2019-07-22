@@ -1,3 +1,5 @@
+
+
 配置网络：
 	vi /etc/sysconfig/network-scripts/ifcfg-nesxx
 修改主机名称：
