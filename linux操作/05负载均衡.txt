@@ -1,0 +1,59 @@
+TCP/IP协议 OSI 7L参考模型
+	7：应用层 www.baidu.com IP 80 1212
+		http、smtp、ssh
+	4：传输层控制【三次握手<<数据传输>>四次分手】
+		tcp udp
+		SOCKET IP:PORT--IP:PORT
+		netstat natp	
+	3:网络层  172.16.17.11
+		ip、icmp
+		ROUTE :下一跳
+		route -n
+	2：链路层
+		以太网、Ethernet、MAC
+
+
+DR(四层)模型负载均衡实现
+	1、准备三台虚拟机，配置三台机器在同一网段(eth0)；其中一台用lvs做负载均衡，另外两台做real server
+	2、配置LVS的VIP
+		ifconfig eth0:8 172.16.17.100/24
+		echo "1" > /proc/sys/net/ipv4/ip_forward
+	3、调整real server 响应通告级别(每一台real server都需要配置)
+		echo 1 >/proc/sys/net/ipv4/conf/eth0/arp_ignore 
+		echo 2 >/proc/sys/net/ipv4/conf/eth0/arp_announce
+		echo 1 >/proc/sys/net/ipv4/conf/all/arp_ignore
+		echo 2 >/proc/sys/net/ipv4/conf/all/arp_announce
+	4、配置real server 的VIP，每一台都需要
+		ifconfig lo:8 172.16.17.100 netmask 255.255.255.255
+	5、启动real server上的httpd
+		1、yum install httpd -y
+		2、在/var/www/html 目录中创建index.html 
+		3、访问ip验证（此步骤要关闭防火墙）
+	6、LVS----ipvsadm
+		1、在lvs机器安装ipvsadm yum install ipvsadm -y
+		2、设置需要监控的包 ipvsadm  -A -t 172.16.17.100:80 -s rr
+		3、在监控包下追加RIP  ipvsadm -a -t 172.16.17.100:80 -r 172.16.17.12:80 -g
+		4、ipvsadm -ln 查看负载情况
+	
+keepalived介绍
+	keepalived是集群管理中保证集群高可用的服务软件
+	1、需要心跳机制探测RS是否提供服务
+		a) 探测到down，需要从lvs中删除该RS
+		b) 探测由down到up，需要从lvs中添加该RS
+	2、LVS DR 需要主备（HA）
+		VRRP协议（虚拟路由冗余协议），
+	
+	3、使用(前提:为了防止LVS或者RS出现异常而访问失败，需要keepalived定时检测LVS和RS；此时需要两台LVS，一台作为主LVS			，一台为从LVS)
+		a)安装keepalived和ipvsadm yum install keepalived ipvsadm -y 
+		b)修改keepalived配置 /etc/keepalived/keepalived.conf
+
+nginx介绍
+	1、可配置监听的端口和域名
+	2、访问时的需要跳转的页面
+	3、反向代理  session一致性配置
+	
+
+		
+		
+		
+			

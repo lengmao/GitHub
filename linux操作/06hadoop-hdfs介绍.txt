@@ -1,0 +1,85 @@
+存储模型：字节
+	1、文件线性切割成块(block):偏移量offset byte
+	2、block分散存储在集群节点中
+	3、单一文件block大小一致，文件与问价可以不一致
+	4、block可以设置副本数，副本分散在不同节点中。副本数不要超过节点数量
+	5、文件上传可以设置block的大小和副本数
+	6、已上传的文件，block副本数可以调整，大小不能改变
+	7、只支持一次写入多次读取，同一时刻只有一个写出者
+	8、可以append追加数据
+	
+架构模型
+	文件元数据MetaData 文件数据
+	(主)NameNode节点存储问价元数据 ：单节点 posix
+	(从)DataNode节点保存文件block数据：多节点
+	DataNode与NameNode保持心跳，提交block列表
+	HdfsClient与NameNode交互元数据信息
+	HdfsClient与DataNode交互文件Block数据
+
+NameNode(NN)
+	基于内存存储，不会和磁盘发生交换
+		1、只存在内存中
+		2、持久化
+	NameNode主要功能
+		1、就收客户端的读写服务
+		2、收集DataNode汇报的Block列表信息
+	NameNode保存metadata信息包括
+		1、文件owership和premissions
+		2、文件的大小，时间
+		3、Block列表：Block偏移量(位置信息)
+		4、Block副本位置
+NameNOde持久化
+		1、NameNode的metadata信息在启动后会加载到内存
+		2、metadata存储到磁盘文件名为“fsimage”
+		3、Block位置信息并不会保存到“fsimage”中
+		4、“edits”记录对metadata的操作日志。。。redis
+		
+DataNode(DN)
+	1、本地磁盘目录存储数据(Block),文件形式
+	2、同时存储Block的元数据信息文件
+	3、启动DN时会向NN汇报block信息
+	4、通过向NN发送心跳保持与其联系(3秒一次)，如果NN10分钟没有收到DN的心跳，则认为其已经lost，
+		并copy其上的block到其他DN
+HDFS优点
+	高容错性
+		1、数据自动保存多个副本
+		2、副本丢失后，自动恢复
+	适合批处理
+		1、移动计算而非数据
+		2、数据位置暴露给计算框架
+	适合大数据处理
+		1、GB,TB,PB级数据
+		2、百万规模以上的文件数
+		3、10K+节点
+	可构建在廉价机器上
+		1、通过多副本提高可靠性
+		2、提高了容错和恢复机制
+	
+SecondaryNameNode(SNN)（1.x技术实现）
+	1、他不是NN的备份(但可以做备份)，他的主要工作是帮助NN合并editslog，减少NN启动时间
+
+Block副本放置策略
+	1、第一个副本，放置在上传文件的DN;如果是集群外提交，则随机挑选一台磁盘不太满，cpu不太忙的节点
+	2、第二个副本，放置在第一个副本不同的机架的节点上
+	3、第三个副本，放置在与第二个相同机架的节点上
+	4、更多副本，随机节点
+
+HDFS读写流程
+	写流程
+		1、client-->NameNode(namenode向客户端发送一个虚拟的位置信息)-->client-->datanode(客户端再根据路径信息向
+		datanode写数据)
+		注意：
+			1、写文件的过程client会将确定问价 的文件切分成对多个block，将一个block写入第一个datanode，第一个datanode根据block的
+			分布原则，写入第二个和第三个datanode，三个datanode写入成功，会给namenode发送心跳，namenode汇总文件的写入
+			位置信息
+			2、在第一个切分的小文件写入datanode完成后，datanode会一次写入其他的datanode，与此同时，客户端和第一个
+			datanode继续写入第二个切分的小文件（时间复利）
+	读流程
+		1、client-->NameNode(namenode返回客户端请求文件的元数据信息，文件位置，问价存储的节点)-->client-->
+			datanode(客户端根据元数据信息，访问datanode获取数据)
+		注意：1、client访问namenode时，namenode返回距离就近原则排好序的文件元数据信息，
+			  2、可以单独的读取其中的某一个block
+		
+		
+		
+		

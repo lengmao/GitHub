@@ -1,0 +1,1 @@
+ps -ef | grep  java | grep bzh-openstack-0.0.1-SNAPSHOT.jar | cut -c 9-15 | xargs kill -9  
