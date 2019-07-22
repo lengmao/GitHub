@@ -14,6 +14,7 @@ import org.apache.hadoop.util.ToolRunner;
 
 /**
  * Created by scaf_xs on 2017/11/16.
+ *
  */
 public class MatrixMain extends Configured implements Tool{
 
