@@ -1,3 +1,4 @@
+#setting
 spring:
      application:
          name: bzh-bigdata
