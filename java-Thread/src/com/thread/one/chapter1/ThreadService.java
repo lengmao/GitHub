@@ -3,7 +3,7 @@ package com.thread.one.chapter1;
 /**
  * @author scaf_xs
  * @ClassName: ThreadService
- * @Description: TODO(这里用一句话描述这个类的作用)
+ * @Description: TODO()
  * @date 2019/5/30 17:24
  */
 
